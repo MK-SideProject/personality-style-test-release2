@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caketest.caketest_1_Activity">
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/caketest_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-84dp" />
+
+    <Button
+        android:id="@+id/caketest_1_an1"
+        android:layout_width="332dp"
+        android:layout_height="63dp"
+        android:background="@drawable/caketest_shape"
+        android:text="그냥 일반적인 케이크(빵집, 카페 케이크)"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707">
+
+    </Button>
+
+    <Button
+        android:id="@+id/caketest_1_an2"
+        android:layout_width="337dp"
+        android:layout_height="52dp"
+        android:background="@drawable/caketest_shape"
+        android:text="크리스마스라는 느낌이 빵빵한 케이크"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caketest_1_an1"
+        app:layout_constraintVertical_bias="0.221">
+
+    </Button>
+
+    <Button
+        android:id="@+id/caketest_1_an3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/caketest_shape"
+        android:text="케이크는 별로인 것 같아. 먹고싶은 다른 음식을 준비한다."
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caketest_1_an2"
+        app:layout_constraintVertical_bias="0.457">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

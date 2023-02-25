@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".planttest.planttest_5_Activity">
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/planttest_5">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/planttest_5_an1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="394dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="289dp"
+        android:background="@drawable/planttest_shape"
+        android:text="우드톤의 밝은 베이직, 갈색"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+    <Button
+        android:id="@+id/planttest_5_an2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginEnd="147dp"
+        android:background="@drawable/planttest_shape"
+        android:text="강렬한 원색 계열"
+        app:layout_constraintBottom_toTopOf="@+id/planttest_5_an3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/planttest_5_an1" />
+
+    <Button
+        android:id="@+id/planttest_5_an3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="574dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/planttest_shape"
+        android:text="모노톤 계열"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

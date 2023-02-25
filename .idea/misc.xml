@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/bankingtest_sape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/bankingtest_shape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/caketest_shape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/clearsape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/colortest_shape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/exercisetest_shape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/foodtest_shape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/imageconer.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/planttest_shape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/santatest_shape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/shape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/drawable/triptest_shape.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_bankingtest.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_bankingtest1.xml" value="0.5" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_bankingtest2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_bankingtest3.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_bankingtest4.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_bankingtest5.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_bankingtest6.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_bankingtest_result1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_bankingtest_result2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_bankingtest_result3.xml" value="0.25" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest3.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest4.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest5.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest6.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest7.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest_result1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest_result2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest_result3.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_caketest_result4.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest3.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest4.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest5.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest6.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest_result1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest_result2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest_result3.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest_result4.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_colortest_result5.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_couple.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest3.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest4.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest5.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest6.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest_result1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest_result2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest_result3.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest_result4.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_exercisetest_result5.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_foodtest.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_foodtest10.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_foodtest9.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_foodtest_result1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_foodtest_result2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_foodtest_result3.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_humor.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_logo.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personality.xml" value="0.264" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personality1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personality10.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personality11.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personality12.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personality13.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personality14.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personality19.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personality29.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personality9.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_personalitytest.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_planttest.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_planttest1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_planttest_result1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_planttest_result2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_santatest.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_santatest1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_triptest.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_triptest2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/activity_triptest_result8.xml" value="0.1296875" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/humor_item.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/layout.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/Documents/GitHub/personality-style-test/app/src/main/res/layout/personality_item.xml" value="0.4" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_bankingtest1.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_bankingtest_result1.xml" value="0.5" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_enfj.xml" value="0.36041666666666666" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_enfp.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_entj.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_entp.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_esfj.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_esfp.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_estj.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_estp.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_infj.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_infp.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_intj.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_intp.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_isfj.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_isfp.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_istj.xml" value="0.18020833333333333" />
+        <entry key="..\:/projects/mk projects/personality-style-test/app/src/main/res/layout/activity_personality_result_istp.xml" value="0.18020833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.5" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

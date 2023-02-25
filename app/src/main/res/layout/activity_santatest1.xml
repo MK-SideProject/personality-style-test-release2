@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".santatest.santatest_1_Activity">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/santatest_1">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/santatest_1_an1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="387dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="296dp"
+        android:background="@drawable/santatest_shape"
+        android:text="정석대로 빨간색 산타복과 산타 모자"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <Button
+        android:id="@+id/santatest_1_an2"
+        android:layout_width="272dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="457dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/santatest_shape"
+        android:text="난 나의 길을 간다! 옷장 속 맘에 드는 옷을 입는다."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".santatest.santatest_6_Activity">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/santatest_6">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/santatest_6_an1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="387dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="327dp"
+        android:background="@drawable/santatest_shape"
+        android:text="곧바로 확인할 수 있게 머리맡에 놓는다."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+    <Button
+        android:id="@+id/santatest_6_an2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="97dp"
+        android:background="@drawable/santatest_shape"
+        android:text="걸어둔 양말에 넣어놓는다."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/santatest_6_an3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/santatest_6_an1" />
+
+    <Button
+        android:id="@+id/santatest_6_an3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="527dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/santatest_shape"
+        android:text="역시 트리 아래가 좋겠지! 트리 아래에 둔다."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

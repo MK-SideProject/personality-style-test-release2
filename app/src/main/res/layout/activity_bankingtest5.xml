@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bankingtest.bankingtest_5_Activity">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/bankingtest_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bankingtest_5_an1"
+        android:layout_width="270dp"
+        android:layout_height="42dp"
+        android:background="@drawable/bankingtest_shape"
+        android:text="너무 좋다 당장 쓰러가야지"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.471">
+
+    </Button>
+
+    <Button
+        android:id="@+id/bankingtest_5_an2"
+        android:layout_width="275dp"
+        android:layout_height="49dp"
+        android:background="@drawable/bankingtest_shape"
+        android:text="나중에 필요해지면 사용해야겠어"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankingtest_5_an1"
+        app:layout_constraintVertical_bias="0.099">
+
+    </Button>
+
+    <Button
+        android:id="@+id/bankingtest_5_an3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bankingtest_shape"
+        android:text="부모님 근처에도 있는 마트인데 선물로 드릴까"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankingtest_5_an2"
+        app:layout_constraintVertical_bias="0.128">
+
+    </Button>
+
+    <Button
+        android:id="@+id/bankingtest_5_an4"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bankingtest_shape"
+        android:text="캐럿 마켓에 팔아서 현금으로 바꿔볼까 "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankingtest_5_an3"
+        app:layout_constraintVertical_bias="0.173">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
