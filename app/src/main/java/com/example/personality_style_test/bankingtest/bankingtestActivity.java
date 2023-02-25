@@ -1,7 +1,10 @@
 package com.example.personality_style_test.bankingtest;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,9 +26,13 @@ public class bankingtestActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Intent intent = new Intent(getBaseContext(), bankingtest_1_Activity.class);
+                // 화면 전환 프래그먼트 선언 및 초기 화면 설정
+                FragmentManager manager = getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
 
-                startActivity(intent);
+                bankingtest_1 bankingtest1 = new bankingtest_1();
+
+                transaction.replace(R.id.bankingtest_start_fragment, bankingtest1).commit();
             }
         });
 

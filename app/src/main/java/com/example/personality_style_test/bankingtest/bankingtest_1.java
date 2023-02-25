@@ -1,12 +1,16 @@
 package com.example.personality_style_test.bankingtest;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.personality_style_test.R;
 
@@ -17,50 +21,107 @@ import com.example.personality_style_test.R;
  */
 public class bankingtest_1 extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public bankingtest_1() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment bankingtest_1.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static bankingtest_1 newInstance(String param1, String param2) {
+
+
+
+    public static bankingtest_1 newInstance() {
         bankingtest_1 fragment = new bankingtest_1();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
+
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bankingtest_1, container, false);
+
+        View BankingTest1 = inflater.inflate(R.layout.fragment_bankingtest_1, container, false);
+        Button bankingtest_1_an1 = (Button) BankingTest1.findViewById(R.id.bankingtest_1_an1);
+        Button bankingtest_1_an2 = (Button) BankingTest1.findViewById(R.id.bankingtest_1_an2);
+        Button bankingtest_1_an3 = (Button) BankingTest1.findViewById(R.id.bankingtest_1_an3);
+
+        bankingtest_1_an1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String bankigtest_result1 = "result1";
+
+                //bankingtest_1 -> bankingtest_2로 데이터 전달 및 프래그먼트 변경
+                bankingtest_2 bankingtest_2 = new bankingtest_2();
+                Bundle bundle = new Bundle();
+                //번틀 값 설정
+                bundle.putString("bankingtest_result1",bankigtest_result1);
+                bankingtest_2.setArguments(bundle);
+
+                //프래그먼트 이동 선언
+                FragmentManager mnger = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = mnger.beginTransaction();
+                //이동
+                transaction.replace(R.id.bankingtest_start_fragment, bankingtest_2);
+
+                transaction.commit();
+
+
+            }
+
+
+        });
+
+        bankingtest_1_an2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String bankingtest_result2 = "result2";
+
+                //bankingtest_1 -> bankingtest_2로 데이터 전달 및 프래그먼트 변경
+                bankingtest_2 bankingtest_2 = new bankingtest_2();
+                Bundle bundle = new Bundle();
+                //번틀 값 설정
+                bundle.putString("bankingtest_result2",bankingtest_result2);
+                bankingtest_2.setArguments(bundle);
+
+                //프래그먼트 이동 선언
+                FragmentManager mnger = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = mnger.beginTransaction();
+                //이동
+                transaction.replace(R.id.bankingtest_start_fragment, bankingtest_2);
+
+                transaction.commit();
+            }
+        });
+
+        bankingtest_1_an3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String bankingtest_result3 = "result3";
+
+                //bankingtest_1 -> bankingtest_2로 데이터 전달 및 프래그먼트 변경
+                bankingtest_2 bankingtest_2 = new bankingtest_2();
+                Bundle bundle = new Bundle();
+                //번틀 값 설정
+                bundle.putString("bankingtest_result3",bankingtest_result3);
+                bankingtest_2.setArguments(bundle);
+
+                //프래그먼트 이동 선언
+                FragmentManager mnger = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = mnger.beginTransaction();
+                //이동
+                transaction.replace(R.id.bankingtest_start_fragment, bankingtest_2);
+
+                transaction.commit();
+            }
+        });
+
+        return BankingTest1;
     }
 }
