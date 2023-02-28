@@ -482,7 +482,7 @@
             android:name=".exercisetest.exercisetestActivity"
             android:exported="true" />
         <activity
-            android:name=".colortest.colortestActivity"
+            android:name=".colortest.colorTestActivity"
             android:exported="true" />
         <activity
             android:name=".caketest.caketestActivity"
