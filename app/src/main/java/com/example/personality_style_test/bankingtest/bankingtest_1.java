@@ -1,6 +1,5 @@
 package com.example.personality_style_test.bankingtest;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -16,22 +15,22 @@ import com.example.personality_style_test.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link bankingtest_1#newInstance} factory method to
+ * Use the {@link BankingTest_1#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class bankingtest_1 extends Fragment {
+public class BankingTest_1 extends Fragment {
 
 
 
-    public bankingtest_1() {
+    public BankingTest_1() {
         // Required empty public constructor
     }
 
 
 
 
-    public static bankingtest_1 newInstance() {
-        bankingtest_1 fragment = new bankingtest_1();
+    public static BankingTest_1 newInstance() {
+        BankingTest_1 fragment = new BankingTest_1();
         Bundle args = new Bundle();
 
         return fragment;
@@ -52,21 +51,22 @@ public class bankingtest_1 extends Fragment {
         Button bankingtest_1_an2 = (Button) BankingTest1.findViewById(R.id.bankingtest_1_an2);
         Button bankingtest_1_an3 = (Button) BankingTest1.findViewById(R.id.bankingtest_1_an3);
 
+        //bankingtest_1 -> bankingtest_2로 데이터 전달 및 프래그먼트 변경
+        BankingTest_2 bankingtest_2 = new BankingTest_2();
+        Bundle bundle = new Bundle();
+
+        //프래그먼트 이동 선언
+        FragmentManager mnger = getActivity().getSupportFragmentManager();
+        FragmentTransaction transaction = mnger.beginTransaction();
+
         bankingtest_1_an1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String bankigtest_result1 = "result1";
-
-                //bankingtest_1 -> bankingtest_2로 데이터 전달 및 프래그먼트 변경
-                bankingtest_2 bankingtest_2 = new bankingtest_2();
-                Bundle bundle = new Bundle();
                 //번틀 값 설정
                 bundle.putString("bankingtest_result1",bankigtest_result1);
                 bankingtest_2.setArguments(bundle);
 
-                //프래그먼트 이동 선언
-                FragmentManager mnger = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = mnger.beginTransaction();
                 //이동
                 transaction.replace(R.id.bankingtest_start_fragment, bankingtest_2);
 
@@ -83,16 +83,10 @@ public class bankingtest_1 extends Fragment {
             public void onClick(View view) {
                 String bankingtest_result2 = "result2";
 
-                //bankingtest_1 -> bankingtest_2로 데이터 전달 및 프래그먼트 변경
-                bankingtest_2 bankingtest_2 = new bankingtest_2();
-                Bundle bundle = new Bundle();
                 //번틀 값 설정
                 bundle.putString("bankingtest_result2",bankingtest_result2);
                 bankingtest_2.setArguments(bundle);
 
-                //프래그먼트 이동 선언
-                FragmentManager mnger = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = mnger.beginTransaction();
                 //이동
                 transaction.replace(R.id.bankingtest_start_fragment, bankingtest_2);
 
@@ -105,16 +99,10 @@ public class bankingtest_1 extends Fragment {
             public void onClick(View view) {
                 String bankingtest_result3 = "result3";
 
-                //bankingtest_1 -> bankingtest_2로 데이터 전달 및 프래그먼트 변경
-                bankingtest_2 bankingtest_2 = new bankingtest_2();
-                Bundle bundle = new Bundle();
                 //번틀 값 설정
                 bundle.putString("bankingtest_result3",bankingtest_result3);
                 bankingtest_2.setArguments(bundle);
 
-                //프래그먼트 이동 선언
-                FragmentManager mnger = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = mnger.beginTransaction();
                 //이동
                 transaction.replace(R.id.bankingtest_start_fragment, bankingtest_2);
 
