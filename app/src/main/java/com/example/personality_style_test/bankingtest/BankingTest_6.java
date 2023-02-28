@@ -81,19 +81,19 @@ public class BankingTest_6 extends Fragment {
                     if(bankingTestResult3 != null && bankingTestResult3.equals("result3") ){
                         //이동
                         transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult3Fg);
+                        transaction.commit();
 
                     }
                     else if(bankingTestResult1 != null && bankingTestResult1.equals("result1")){
-                        Toast.makeText(getContext(), bankingTestResult1,Toast.LENGTH_SHORT).show();
+
 
                         transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult1Fg);
+                        transaction.commit();
                     }
                     else{
-                        Toast.makeText(getContext(), bankingTestResult2,Toast.LENGTH_SHORT).show();
+
                         transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult2Fg);
-                        Log.d("check3", bankingTestResult3);
-                        Log.d("check1", bankingTestResult1);
-                        Log.d("check2", bankingTestResult2);
+                        transaction.commit();
 
                     }
 
@@ -108,14 +108,16 @@ public class BankingTest_6 extends Fragment {
                     if(bankingTestResult3 != null && bankingTestResult3.equals("result3") ){
                         //이동
                         transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult3Fg);
-
+                        transaction.commit();
 
                     }
                     else if(bankingTestResult1 != null && bankingTestResult1.equals("result1")){
                         transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult1Fg);
+                        transaction.commit();
                     }
                     else{
                         transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult2Fg);
+                        transaction.commit();
 
                     }
                 }
@@ -126,6 +128,7 @@ public class BankingTest_6 extends Fragment {
                 public void onClick(View view) {
 
                     transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult3Fg);
+                    transaction.commit();
                 }
             });
 
