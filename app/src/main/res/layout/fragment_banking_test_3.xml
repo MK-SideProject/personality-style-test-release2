@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bankingtest.BankingTest_3">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/bankingtest_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bankingtest_3_an1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bankingtest_shape"
+        android:text="아니 이게 무슨일이지, 당장 전화해서 알아봐야겠어"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.477">
+
+    </Button>
+
+    <Button
+        android:id="@+id/bankingtest_3_an2"
+        android:layout_width="292dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bankingtest_shape"
+        android:text="뭐지 보일러나 물을 더 썼나? 일단 저번달에 어떻게 사용했었는지 곰곰이 생각해본다"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankingtest_3_an1"
+        app:layout_constraintVertical_bias="0.106">
+
+    </Button>
+
+    <Button
+        android:id="@+id/bankingtest_3_an3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bankingtest_shape"
+        android:text="내일 생각해야지 지금은 귀찮아"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankingtest_3_an2"
+        app:layout_constraintVertical_bias="0.197">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
