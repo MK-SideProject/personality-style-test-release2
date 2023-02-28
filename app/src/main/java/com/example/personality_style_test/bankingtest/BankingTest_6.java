@@ -3,10 +3,15 @@ package com.example.personality_style_test.bankingtest;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.personality_style_test.R;
 
@@ -17,33 +22,18 @@ import com.example.personality_style_test.R;
  */
 public class BankingTest_6 extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private String bankingTestResult1;
+    private String bankingTestResult2;
+    private String bankingTestResult3;
 
     public BankingTest_6() {
-        // Required empty public constructor
+
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment BankingTest_6.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static BankingTest_6 newInstance(String param1, String param2) {
+
+    public static BankingTest_6 newInstance() {
         BankingTest_6 fragment = new BankingTest_6();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,16 +41,98 @@ public class BankingTest_6 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_banking_test_6, container, false);
+
+        //뷰 선언
+        View BankingTest6 = inflater.inflate(R.layout.fragment_banking_test_6, container, false);
+
+        Button bankingTest6_an1 = (Button) BankingTest6.findViewById(R.id.bankingtest_6_an1);
+        Button bankingTest6_an2 = (Button) BankingTest6.findViewById(R.id.bankingtest_6_an2);
+        Button bankingTest6_an3 = (Button) BankingTest6.findViewById(R.id.bankingtest_6_an3);
+
+        //전달한 번들 메소드 받기
+        Bundle bundle = getArguments();
+
+
+        if(bundle != null){
+
+            bankingTestResult1 = bundle.getString("bankingTestResult1");
+            bankingTestResult2 = bundle.getString("bankingTestResult2");
+            bankingTestResult3 = bundle.getString("bankingTestResult3");
+
+            //프래그먼트 이동 선언
+            FragmentManager mnger = getActivity().getSupportFragmentManager();
+            FragmentTransaction transaction = mnger.beginTransaction();
+
+            BankingTestResult1Fg bankingTestResult1Fg = new BankingTestResult1Fg();
+            BankingTestResult2Fg bankingTestResult2Fg = new BankingTestResult2Fg();
+            BankingTestResult3Fg bankingTestResult3Fg = new BankingTestResult3Fg();
+
+            bankingTest6_an1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+
+                    if(bankingTestResult3 != null && bankingTestResult3.equals("result3") ){
+                        //이동
+                        transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult3Fg);
+
+                    }
+                    else if(bankingTestResult1 != null && bankingTestResult1.equals("result1")){
+                        Toast.makeText(getContext(), bankingTestResult1,Toast.LENGTH_SHORT).show();
+
+                        transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult1Fg);
+                    }
+                    else{
+                        Toast.makeText(getContext(), bankingTestResult2,Toast.LENGTH_SHORT).show();
+                        transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult2Fg);
+                        Log.d("check3", bankingTestResult3);
+                        Log.d("check1", bankingTestResult1);
+                        Log.d("check2", bankingTestResult2);
+
+                    }
+
+
+                }
+            });
+
+            bankingTest6_an2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    if(bankingTestResult3 != null && bankingTestResult3.equals("result3") ){
+                        //이동
+                        transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult3Fg);
+
+
+                    }
+                    else if(bankingTestResult1 != null && bankingTestResult1.equals("result1")){
+                        transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult1Fg);
+                    }
+                    else{
+                        transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult2Fg);
+
+                    }
+                }
+            });
+
+            bankingTest6_an3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    transaction.replace(R.id.bankingtest_start_fragment, bankingTestResult3Fg);
+                }
+            });
+
+        }else{
+            Toast.makeText(getContext(), "값이 없습니다", Toast.LENGTH_LONG).show();
+        }
+
+        return BankingTest6;
     }
 }
