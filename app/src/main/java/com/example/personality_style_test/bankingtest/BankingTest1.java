@@ -14,16 +14,16 @@ import android.widget.Button;
 import com.example.personality_style_test.R;
 
 
-public class BankingTest_1 extends Fragment {
+public class BankingTest1 extends Fragment {
 
 
-    public BankingTest_1() {
+    public BankingTest1() {
         // Required empty public constructor
     }
 
 
-    public static BankingTest_1 newInstance() {
-        BankingTest_1 fragment = new BankingTest_1();
+    public static BankingTest1 newInstance() {
+        BankingTest1 fragment = new BankingTest1();
         Bundle args = new Bundle();
 
         return fragment;
@@ -45,7 +45,7 @@ public class BankingTest_1 extends Fragment {
         Button bankingTest1_an3 = (Button) BankingTest1.findViewById(R.id.bankingtest_1_an3);
 
         //bankingtest_1 -> bankingtest_2로 데이터 전달 및 프래그먼트 변경
-        BankingTest_2 bankingTest_2 = new BankingTest_2();
+        BankingTest2 bankingTest_2 = new BankingTest2();
         Bundle bundle = new Bundle();
 
         //프래그먼트 이동 선언

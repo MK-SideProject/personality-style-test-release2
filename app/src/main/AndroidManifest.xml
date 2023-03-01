@@ -485,10 +485,10 @@
             android:name=".colortest.colorTestActivity"
             android:exported="true" />
         <activity
-            android:name=".caketest.caketestActivity"
+            android:name=".caketest.CakeTestActivity"
             android:exported="true" />
         <activity
-            android:name=".bankingtest.bankingtestActivity"
+            android:name=".bankingtest.BankingTestActivity"
             android:exported="true" />
         <activity
             android:name=".foodtest.foodtestActivity"

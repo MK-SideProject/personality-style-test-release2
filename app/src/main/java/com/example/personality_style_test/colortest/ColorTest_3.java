@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.bankingtest.BankingTest_4;
 
 /**
  * A simple {@link Fragment} subclass.

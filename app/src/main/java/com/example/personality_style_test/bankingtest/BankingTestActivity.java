@@ -10,7 +10,7 @@ import android.widget.Button;
 
 import com.example.personality_style_test.R;
 
-public class bankingtestActivity extends AppCompatActivity {
+public class BankingTestActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class bankingtestActivity extends AppCompatActivity {
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
 
-                BankingTest_1 BankingTest1 = new BankingTest_1();
+                BankingTest1 BankingTest1 = new BankingTest1();
 
                 transaction.replace(R.id.bankingtest_start_fragment, BankingTest1).commit();
             }

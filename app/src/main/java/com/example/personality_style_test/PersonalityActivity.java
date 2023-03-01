@@ -11,7 +11,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.example.personality_style_test.bankingtest.bankingtestActivity;
+import com.example.personality_style_test.bankingtest.BankingTestActivity;
 
 import com.example.personality_style_test.colortest.colorTestActivity;
 import com.example.personality_style_test.exercisetest.exercisetestActivity;
@@ -54,7 +54,7 @@ public class PersonalityActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if(position==2){
-                    Intent intent = new Intent(PersonalityActivity.this, bankingtestActivity.class);
+                    Intent intent = new Intent(PersonalityActivity.this, BankingTestActivity.class);
                     startActivity(intent);
                 }
                 if(position==3){

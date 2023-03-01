@@ -14,22 +14,21 @@ import android.widget.Button;
 import com.example.personality_style_test.R;
 
 
-public class BankingTest_2 extends Fragment {
+public class BankingTest5 extends Fragment {
 
-
-    //결과값 이동
     private String bankingTestResult1;
     private String bankingTestResult2;
     private String bankingTestResult3;
-    public BankingTest_2() {
-        // Required empty public constructor
+
+    public BankingTest5() {
+
     }
 
 
-    public static BankingTest_2 newInstance() {
-        BankingTest_2 fragment = new BankingTest_2();
+    public static BankingTest5 newInstance() {
+        BankingTest5 fragment = new BankingTest5();
         Bundle args = new Bundle();
-
+        fragment.setArguments(args);
         return fragment;
     }
 
@@ -43,24 +42,26 @@ public class BankingTest_2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View BankingTest2 = inflater.inflate(R.layout.fragment_banking_test_2, container, false);
+        //뷰 선언
+        View BankingTest5 = inflater.inflate(R.layout.fragment_banking_test_5, container, false);
 
-        Button bankingTest2_an1 = (Button) BankingTest2.findViewById(R.id.bankingtest_2_an1);
-        Button bankingTest2_an2 = (Button) BankingTest2.findViewById(R.id.bankingtest_2_an2);
-        Button bankingTest2_an3 = (Button) BankingTest2.findViewById(R.id.bankingtest_2_an3);
+        Button bankingTest5_an1 = (Button) BankingTest5.findViewById(R.id.bankingtest_5_an1);
+        Button bankingTest5_an2 = (Button) BankingTest5.findViewById(R.id.bankingtest_5_an2);
+        Button bankingTest5_an3 = (Button) BankingTest5.findViewById(R.id.bankingtest_5_an3);
+        Button bankingTest5_an4 = (Button) BankingTest5.findViewById(R.id.bankingtest_5_an3);
 
         //전달한 번들 메소드 받기
         Bundle bundle = getArguments();
 
         //값이 있다면
-        if(bundle != null){
+        if(bundle != null) {
             bankingTestResult1 = bundle.getString("bankingTestResult1");
             bankingTestResult2 = bundle.getString("bankingTestResult2");
             bankingTestResult3 = bundle.getString("bankingTestResult3");
 
 
             //데이터 전달 및 프래그먼트 변경
-            BankingTest_3 BankingTest3 = new BankingTest_3();
+            BankingTest6 bankingTest_6 = new BankingTest6();
             //전달할 번들 생성
             Bundle bundleNext = new Bundle();
 
@@ -68,8 +69,8 @@ public class BankingTest_2 extends Fragment {
             FragmentManager mnger = getActivity().getSupportFragmentManager();
             FragmentTransaction transaction = mnger.beginTransaction();
 
-            //버튼 1번 클릭
-            bankingTest2_an1.setOnClickListener(new View.OnClickListener() {
+
+            bankingTest5_an1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
@@ -78,19 +79,16 @@ public class BankingTest_2 extends Fragment {
                     bundleNext.putString("bankingTestResult2",bankingTestResult2);
                     bundleNext.putString("bankingTestResult3",bankingTestResult3);
                     //다음 프래그먼트로 값 이동
-                    BankingTest3.setArguments(bundleNext);
+                    bankingTest_6.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.bankingtest_start_fragment, BankingTest3);
+                    transaction.replace(R.id.bankingtest_start_fragment, bankingTest_6);
 
                     transaction.commit();
-
-
                 }
             });
 
-            //2번 버튼 클릭
-            bankingTest2_an2.setOnClickListener(new View.OnClickListener() {
+            bankingTest5_an2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
@@ -98,17 +96,18 @@ public class BankingTest_2 extends Fragment {
                     bundleNext.putString("bankingTestResult1",bankingTestResult1);
                     bundleNext.putString("bankingTestResult2",bankingTestResult2);
                     bundleNext.putString("bankingTestResult3",bankingTestResult3);
-                    BankingTest3.setArguments(bundleNext);
+                    //다음 프래그먼트로 값 이동
+                    bankingTest_6.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.bankingtest_start_fragment, BankingTest3);
+                    transaction.replace(R.id.bankingtest_start_fragment, bankingTest_6);
 
                     transaction.commit();
                 }
             });
 
-            //3번 버튼 클릭
-            bankingTest2_an3.setOnClickListener(new View.OnClickListener() {
+
+            bankingTest5_an3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
@@ -116,22 +115,34 @@ public class BankingTest_2 extends Fragment {
                     bundleNext.putString("bankingTestResult1",bankingTestResult1);
                     bundleNext.putString("bankingTestResult2",bankingTestResult2);
                     bundleNext.putString("bankingTestResult3",bankingTestResult3);
-                    BankingTest3.setArguments(bundleNext);
+                    //다음 프래그먼트로 값 이동
+                    bankingTest_6.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.bankingtest_start_fragment, BankingTest3);
+                    transaction.replace(R.id.bankingtest_start_fragment, bankingTest_6);
 
                     transaction.commit();
                 }
             });
 
+            bankingTest5_an4.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
 
+                    //번틀 값 설정
+                    bundleNext.putString("bankingTestResult1",bankingTestResult1);
+                    bundleNext.putString("bankingTestResult2",bankingTestResult2);
+                    bundleNext.putString("bankingTestResult3",bankingTestResult3);
+                    //다음 프래그먼트로 값 이동
+                    bankingTest_6.setArguments(bundleNext);
+
+                    //이동
+                    transaction.replace(R.id.bankingtest_start_fragment, bankingTest_6);
+
+                    transaction.commit();
+                }
+            });
         }
-
-
-
-
-        return BankingTest2;
+        return BankingTest5;
     }
-
 }

@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,22 +16,22 @@ import com.example.personality_style_test.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link BankingTest_6#newInstance} factory method to
+ * Use the {@link BankingTest6#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BankingTest_6 extends Fragment {
+public class BankingTest6 extends Fragment {
 
     private String bankingTestResult1;
     private String bankingTestResult2;
     private String bankingTestResult3;
 
-    public BankingTest_6() {
+    public BankingTest6() {
 
     }
 
 
-    public static BankingTest_6 newInstance() {
-        BankingTest_6 fragment = new BankingTest_6();
+    public static BankingTest6 newInstance() {
+        BankingTest6 fragment = new BankingTest6();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
