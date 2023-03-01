@@ -17,9 +17,9 @@ public class bankingtestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bankingtest);
 
-        Button bankingtest_start = (Button) findViewById(R.id.bankingtest_start);
+        Button bankingTestStart = (Button) findViewById(R.id.bankingtest_start);
 
-        bankingtest_start.setOnClickListener(new View.OnClickListener() {
+        bankingTestStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -28,9 +28,9 @@ public class bankingtestActivity extends AppCompatActivity {
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
 
-                BankingTest_1 bankingtest1 = new BankingTest_1();
+                BankingTest_1 BankingTest1 = new BankingTest_1();
 
-                transaction.replace(R.id.bankingtest_start_fragment, bankingtest1).commit();
+                transaction.replace(R.id.bankingtest_start_fragment, BankingTest1).commit();
             }
         });
 
