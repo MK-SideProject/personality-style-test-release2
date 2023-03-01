@@ -10,7 +10,7 @@ import android.widget.Button;
 
 import com.example.personality_style_test.R;
 
-public class ColorTestActivity extends AppCompatActivity {
+public class colorTestActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class ColorTestActivity extends AppCompatActivity {
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
 
-                ColorTest1 colorTest1 = new ColorTest1();
+                ColorTest_1 colorTest1 = new ColorTest_1();
 
                 transaction.replace(R.id.colortest_start_fragment, colorTest1).commit();
 
