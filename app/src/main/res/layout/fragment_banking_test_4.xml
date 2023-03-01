@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bankingtest.BankingTest4">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bankingtest_4" />
+
+    <Button
+        android:id="@+id/bankingtest_4_an1"
+        android:layout_width="281dp"
+        android:layout_height="64dp"
+        android:background="@drawable/bankingtest_shape"
+        android:text="집 주변 마트품목 별로 싼곳을 파악하고 있는 상태, 느긋하게 동네를 돌면서 마트를 둘러본다."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+    </Button>
+
+    <Button
+        android:id="@+id/bankingtest_4_an2"
+        android:layout_width="291dp"
+        android:layout_height="53dp"
+        android:background="@drawable/bankingtest_shape"
+        android:text="적당히 괜찮은 마트를 들어가서 예산내에 장을 보고 온다."
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankingtest_4_an1"
+        app:layout_constraintVertical_bias="0.15">
+
+    </Button>
+
+    <Button
+        android:id="@+id/bankingtest_4_an3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bankingtest_shape"
+        android:text="그냥 인터넷에서 시켜야지, 주말은 쉬는게 최고야"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankingtest_4_an2"
+        app:layout_constraintVertical_bias="0.205">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

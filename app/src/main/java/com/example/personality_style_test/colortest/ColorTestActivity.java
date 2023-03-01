@@ -4,15 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.bankingtest.BankingTest_1;
 
-public class colorTestActivity extends AppCompatActivity {
+public class ColorTestActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +27,7 @@ public class colorTestActivity extends AppCompatActivity {
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
 
-                ColorTest_1 colorTest1 = new ColorTest_1();
+                ColorTest1 colorTest1 = new ColorTest1();
 
                 transaction.replace(R.id.colortest_start_fragment, colorTest1).commit();
 

@@ -14,14 +14,14 @@ import android.widget.Button;
 import com.example.personality_style_test.R;
 
 
-public class ColorTest_1 extends Fragment {
+public class ColorTest1 extends Fragment {
 
-    public ColorTest_1() {
+    public ColorTest1() {
         // Required empty public constructor
     }
 
-    public static ColorTest_1 newInstance() {
-        ColorTest_1 fragment = new ColorTest_1();
+    public static ColorTest1 newInstance() {
+        ColorTest1 fragment = new ColorTest1();
         Bundle args = new Bundle();
 
         return fragment;
@@ -41,7 +41,7 @@ public class ColorTest_1 extends Fragment {
         Button colorTest1_an3 = (Button) colorTest1.findViewById(R.id.colorTest1_an3);
         Button colorTest1_an4 = (Button) colorTest1.findViewById(R.id.colorTest1_an4);
 
-        ColorTest_2 colorTest2 = new ColorTest_2();
+        ColorTest2 colorTest2 = new ColorTest2();
         Bundle bundle = new Bundle();
 
         FragmentManager manager = getActivity().getSupportFragmentManager();

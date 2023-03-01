@@ -8,9 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.bankingtest.bankingtest_1_Activity;
 
-public class caketestActivity extends AppCompatActivity {
+public class CakeTestActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
