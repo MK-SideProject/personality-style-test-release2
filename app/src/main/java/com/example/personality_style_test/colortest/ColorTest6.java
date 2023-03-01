@@ -1,6 +1,5 @@
 package com.example.personality_style_test.colortest;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -16,10 +15,10 @@ import com.example.personality_style_test.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ColorTest_6#newInstance} factory method to
+ * Use the {@link ColorTest6#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ColorTest_6 extends Fragment {
+public class ColorTest6 extends Fragment {
 
     private String colorTestResult1;
     private String colorTestResult2;
@@ -27,12 +26,12 @@ public class ColorTest_6 extends Fragment {
     private String colorTestResult4;
     private String colorTestResult5;
 
-    public ColorTest_6() {
+    public ColorTest6() {
         // Required empty public constructor
     }
 
-    public static ColorTest_6 newInstance() {
-        ColorTest_6 fragment = new ColorTest_6();
+    public static ColorTest6 newInstance() {
+        ColorTest6 fragment = new ColorTest6();
         Bundle args = new Bundle();
 
         return fragment;
