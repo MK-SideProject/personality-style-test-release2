@@ -15,10 +15,10 @@ import com.example.personality_style_test.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ColorTest_5#newInstance} factory method to
+ * Use the {@link ColorTest5#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ColorTest_5 extends Fragment {
+public class ColorTest5 extends Fragment {
 
     private String colorTestResult1;
     private String colorTestResult2;
@@ -26,12 +26,12 @@ public class ColorTest_5 extends Fragment {
     private String colorTestResult4;
     private String colorTestResult5;
 
-    public ColorTest_5() {
+    public ColorTest5() {
         // Required empty public constructor
     }
 
-    public static ColorTest_5 newInstance() {
-        ColorTest_5 fragment = new ColorTest_5();
+    public static ColorTest5 newInstance() {
+        ColorTest5 fragment = new ColorTest5();
         Bundle args = new Bundle();
 
         return fragment;
@@ -63,7 +63,7 @@ public class ColorTest_5 extends Fragment {
             colorTestResult5 = bundle.getString("colorTestResult5");
 
             //데이터 전달 및 프래그먼트 변경
-            ColorTest_6 colorTest6 = new ColorTest_6();
+            ColorTest6 colorTest6 = new ColorTest6();
             //전달할 번들 생성
             Bundle bundleNext = new Bundle();
 

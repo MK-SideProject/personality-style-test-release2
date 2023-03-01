@@ -12,14 +12,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.colortest.ColorTest_3;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ColorTest_2#newInstance} factory method to
+ * Use the {@link ColorTest2#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ColorTest_2 extends Fragment {
+public class ColorTest2 extends Fragment {
 
     private String colorTestResult1;
     private String colorTestResult2;
@@ -27,12 +26,12 @@ public class ColorTest_2 extends Fragment {
     private String colorTestResult4;
     private String colorTestResult5;
 
-    public ColorTest_2() {
+    public ColorTest2() {
         // Required empty public constructor
     }
 
-    public static ColorTest_2 newInstance() {
-        ColorTest_2 fragment = new ColorTest_2();
+    public static ColorTest2 newInstance() {
+        ColorTest2 fragment = new ColorTest2();
         Bundle args = new Bundle();
 
         return fragment;
@@ -65,7 +64,7 @@ public class ColorTest_2 extends Fragment {
             colorTestResult5 = bundle.getString("colorTestResult4");
 
             //데이터 전달 및 프래그먼트 변경
-            ColorTest_3 colorTest3 = new ColorTest_3();
+            ColorTest3 colorTest3 = new ColorTest3();
             //전달할 번들 생성
             Bundle bundleNext = new Bundle();
 
