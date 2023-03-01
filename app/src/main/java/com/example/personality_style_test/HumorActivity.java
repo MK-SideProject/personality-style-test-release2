@@ -11,7 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 
-import com.example.personality_style_test.caketest.caketestActivity;
+import com.example.personality_style_test.caketest.CakeTestActivity;
 
 import com.example.personality_style_test.foodtest.foodtestActivity;
 
@@ -49,7 +49,7 @@ public class HumorActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if(position==2){
-                    Intent intent = new Intent(HumorActivity.this, caketestActivity.class);
+                    Intent intent = new Intent(HumorActivity.this, CakeTestActivity.class);
                     startActivity(intent);
                 }
 

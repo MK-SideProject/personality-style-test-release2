@@ -482,13 +482,13 @@
             android:name=".exercisetest.exercisetestActivity"
             android:exported="true" />
         <activity
-            android:name=".colortest.colortestActivity"
+            android:name=".colortest.ColorTestActivity"
             android:exported="true" />
         <activity
-            android:name=".caketest.caketestActivity"
+            android:name=".caketest.CakeTestActivity"
             android:exported="true" />
         <activity
-            android:name=".bankingtest.bankingtestActivity"
+            android:name=".bankingtest.BankingTestActivity"
             android:exported="true" />
         <activity
             android:name=".foodtest.foodtestActivity"

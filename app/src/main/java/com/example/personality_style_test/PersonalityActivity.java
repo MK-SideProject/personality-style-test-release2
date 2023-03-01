@@ -11,9 +11,9 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.example.personality_style_test.bankingtest.bankingtestActivity;
+import com.example.personality_style_test.bankingtest.BankingTestActivity;
 
-import com.example.personality_style_test.colortest.colortestActivity;
+import com.example.personality_style_test.colortest.ColorTestActivity;
 import com.example.personality_style_test.exercisetest.exercisetestActivity;
 
 import com.example.personality_style_test.planttest.planttestActivity;
@@ -46,7 +46,7 @@ public class PersonalityActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //final PersonalityItem item = (PersonalityItem) adapter.getItem(position);
                 if(position==0){
-                    Intent intent = new Intent(PersonalityActivity.this, colortestActivity.class);
+                    Intent intent = new Intent(PersonalityActivity.this, ColorTestActivity.class);
                     startActivity(intent);
                 }
                 if(position==1){
@@ -54,7 +54,7 @@ public class PersonalityActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if(position==2){
-                    Intent intent = new Intent(PersonalityActivity.this, bankingtestActivity.class);
+                    Intent intent = new Intent(PersonalityActivity.this, BankingTestActivity.class);
                     startActivity(intent);
                 }
                 if(position==3){
