@@ -491,7 +491,7 @@
             android:name=".bankingtest.BankingTestActivity"
             android:exported="true" />
         <activity
-            android:name=".foodtest.foodtestActivity"
+            android:name=".foodtest.FoodTestActivity"
             android:exported="true" />
         <activity
             android:name=".coupleActivity"
