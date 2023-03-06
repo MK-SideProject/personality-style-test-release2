@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.personality_style_test.R;
 
@@ -39,6 +40,9 @@ public class CakeTestResult3Fg extends Fragment {
                              Bundle savedInstanceState) {
 
         View CakeTestResult3 = inflater.inflate(R.layout.fragment_cake_test_result3_fg, container, false);
+
+        Button cakeTestRestart = (Button) CakeTestResult3.findViewById(R.id.caketest_restart);
+        Button cakeTestList = (Button) CakeTestResult3.findViewById(R.id.caketest_list);
 
         return CakeTestResult3;
     }
