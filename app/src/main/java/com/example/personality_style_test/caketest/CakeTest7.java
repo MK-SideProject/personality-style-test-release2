@@ -1,49 +1,31 @@
 package com.example.personality_style_test.caketest;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.personality_style_test.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CakeTest7#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class CakeTest7 extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    //결과값 이동
+    private String cakeTestResult1;
+    private String cakeTestResult2;
+    private String cakeTestResult3;
+    private String cakeTestResult4;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public CakeTest7() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment CakeTest7.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static CakeTest7 newInstance(String param1, String param2) {
+    public static CakeTest7 newInstance() {
         CakeTest7 fragment = new CakeTest7();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,16 +33,103 @@ public class CakeTest7 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cake_test7, container, false);
+
+        View CakeTest7 =  inflater.inflate(R.layout.fragment_cake_test7, container, false);
+
+
+        Button cakeTest_7_an1 = (Button) CakeTest7.findViewById(R.id.caketest_7_an1);
+        Button cakeTest_7_an2 = (Button) CakeTest7.findViewById(R.id.caketest_7_an2);
+
+        //전달한 번들 메소드 받기
+        Bundle bundle = getArguments();
+
+
+        //값이 있다면
+        if(bundle != null) {
+            cakeTestResult1 = bundle.getString("cakeTestResult1");
+            cakeTestResult2 = bundle.getString("cakeTestResult2");
+            cakeTestResult3 = bundle.getString("cakeTestResult3");
+            cakeTestResult4 = bundle.getString("cakeTestResult4");
+
+
+            //데이터 전달 및 프래그먼트 변경
+            CakeTest3 CakeTest3 = new CakeTest3();
+            //전달할 번들 생성
+            Bundle bundleNext = new Bundle();
+
+            //프래그먼트 이동 선언
+            FragmentManager mnger = getActivity().getSupportFragmentManager();
+            FragmentTransaction transaction = mnger.beginTransaction();
+
+
+            CakeTestResult1Fg cakeTestResult1Fg = new CakeTestResult1Fg();
+            CakeTestResult2Fg cakeTestResult2Fg = new CakeTestResult2Fg();
+            CakeTestResult3Fg cakeTestResult3Fg = new CakeTestResult3Fg();
+            CakeTestResult4Fg cakeTestResult4Fg = new CakeTestResult4Fg();
+
+            cakeTest_7_an1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    if (cakeTestResult4 != null && cakeTestResult4.equals("result4")) {
+                        //이동
+                        transaction.replace(R.id.caketest_start_fragment, cakeTestResult4Fg);
+                        transaction.commit();
+
+                    } else if (cakeTestResult1 != null && cakeTestResult1.equals("result1")) {
+                        //이동
+                        transaction.replace(R.id.caketest_start_fragment, cakeTestResult1Fg);
+                        transaction.commit();
+
+                    } else if (cakeTestResult3 != null && cakeTestResult3.equals("result3")) {
+                        //이동
+                        transaction.replace(R.id.caketest_start_fragment, cakeTestResult3Fg);
+                        transaction.commit();
+
+                    } else {
+                        //이동
+                        transaction.replace(R.id.caketest_start_fragment, cakeTestResult2Fg);
+                        transaction.commit();
+                    }
+
+
+                }
+            });
+
+            cakeTest_7_an2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    if (cakeTestResult4 != null && cakeTestResult4.equals("result4")) {
+                        //이동
+                        transaction.replace(R.id.caketest_start_fragment, cakeTestResult4Fg);
+                        transaction.commit();
+
+                    } else if (cakeTestResult1 != null && cakeTestResult1.equals("result1")) {
+                        //이동
+                        transaction.replace(R.id.caketest_start_fragment, cakeTestResult1Fg);
+                        transaction.commit();
+
+                    } else if (cakeTestResult3 != null && cakeTestResult3.equals("result3")) {
+                        //이동
+                        transaction.replace(R.id.caketest_start_fragment, cakeTestResult3Fg);
+                        transaction.commit();
+
+                    } else {
+                        //이동
+                        transaction.replace(R.id.caketest_start_fragment, cakeTestResult2Fg);
+                        transaction.commit();
+                    }
+
+                }
+            });
+
+        }
+        return CakeTest7;
     }
 }

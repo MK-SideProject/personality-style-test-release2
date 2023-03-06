@@ -1,49 +1,37 @@
 package com.example.personality_style_test.caketest;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.personality_style_test.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CakeTest6#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class CakeTest6 extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    //결과값 이동
+    private String cakeTestResult1;
+    private String cakeTestResult2;
+    private String cakeTestResult3;
+    private String cakeTestResult4;
 
     public CakeTest6() {
-        // Required empty public constructor
+
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment CakeTest6.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static CakeTest6 newInstance(String param1, String param2) {
+
+
+    public static CakeTest6 newInstance() {
         CakeTest6 fragment = new CakeTest6();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,16 +39,79 @@ public class CakeTest6 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cake_test6, container, false);
+
+        View CakeTest6 =  inflater.inflate(R.layout.fragment_cake_test6, container, false);
+
+        Button cakeTest_6_an1 = (Button) CakeTest6.findViewById(R.id.caketest_6_an1);
+        Button cakeTest_6_an2 = (Button) CakeTest6.findViewById(R.id.caketest_6_an2);
+
+        //전달한 번들 메소드 받기
+        Bundle bundle = getArguments();
+
+
+        //값이 있다면
+        if(bundle != null) {
+            cakeTestResult1 = bundle.getString("cakeTestResult1");
+            cakeTestResult2 = bundle.getString("cakeTestResult2");
+            cakeTestResult3 = bundle.getString("cakeTestResult3");
+            cakeTestResult4 = bundle.getString("cakeTestResult4");
+
+
+            //데이터 전달 및 프래그먼트 변경
+            CakeTest7 CakeTest7 = new CakeTest7();
+            //전달할 번들 생성
+            Bundle bundleNext = new Bundle();
+
+            //프래그먼트 이동 선언
+            FragmentManager mnger = getActivity().getSupportFragmentManager();
+            FragmentTransaction transaction = mnger.beginTransaction();
+
+
+            cakeTest_6_an1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    //번틀 값 설정
+                    bundleNext.putString("cakeTestResult1",cakeTestResult1);
+                    bundleNext.putString("cakeTestResult2",cakeTestResult2);
+                    bundleNext.putString("cakeTestResult3",cakeTestResult3);
+                    bundleNext.putString("cakeTestResult4",cakeTestResult4);
+                    //다음 프래그먼트로 값 이동
+                    CakeTest7.setArguments(bundleNext);
+
+                    //이동
+                    transaction.replace(R.id.caketest_start_fragment, CakeTest7);
+
+                    transaction.commit();
+                }
+            });
+
+            cakeTest_6_an2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    //번틀 값 설정
+                    bundleNext.putString("cakeTestResult1",cakeTestResult1);
+                    bundleNext.putString("cakeTestResult2",cakeTestResult2);
+                    bundleNext.putString("cakeTestResult3",cakeTestResult3);
+                    bundleNext.putString("cakeTestResult4",cakeTestResult4);
+                    //다음 프래그먼트로 값 이동
+                    CakeTest7.setArguments(bundleNext);
+
+                    //이동
+                    transaction.replace(R.id.caketest_start_fragment, CakeTest7);
+
+                    transaction.commit();
+                }
+            });
+
+        }
+        return CakeTest6;
     }
 }
