@@ -39,61 +39,61 @@ public class CakeTest1 extends Fragment {
                              Bundle savedInstanceState) {
 
         View CakeTest1 =  inflater.inflate(R.layout.fragment_cake_test1, container, false);
-        Button caketest_1_an1 = (Button) CakeTest1.findViewById(R.id.caketest_1_an1);
-        Button caketest_1_an2 = (Button) CakeTest1.findViewById(R.id.caketest_1_an2);
-        Button caketest_1_an3 = (Button) CakeTest1.findViewById(R.id.caketest_1_an3);
+        Button cakeTest_1_an1 = (Button) CakeTest1.findViewById(R.id.caketest_1_an1);
+        Button cakeTest_1_an2 = (Button) CakeTest1.findViewById(R.id.caketest_1_an2);
+        Button cakeTest_1_an3 = (Button) CakeTest1.findViewById(R.id.caketest_1_an3);
 
 
-        CakeTest2 cakeTest2 = new CakeTest2();
+        CakeTest2 CakeTest2 = new CakeTest2();
         Bundle bundle = new Bundle();
 
         //프래그먼트 이동 선언
         FragmentManager mnger = getActivity().getSupportFragmentManager();
         FragmentTransaction transaction = mnger.beginTransaction();
 
-        caketest_1_an1.setOnClickListener(new View.OnClickListener() {
+        cakeTest_1_an1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String CakeTestResult2 = "result2";
+                String cakeTestResult2 = "result2";
 
                 //번틀 값 설정
-                bundle.putString("CakeTestResult2",CakeTestResult2);
-                cakeTest2.setArguments(bundle);
+                bundle.putString("cakeTestResult2",cakeTestResult2);
+                CakeTest2.setArguments(bundle);
 
                 //이동
-                transaction.replace(R.id.caketest_start_fragment, cakeTest2);
+                transaction.replace(R.id.caketest_start_fragment, CakeTest2);
 
                 transaction.commit();
             }
         });
 
-        caketest_1_an2.setOnClickListener(new View.OnClickListener() {
+        cakeTest_1_an2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String CakeTestResult3 = "result3";
+                String cakeTestResult3 = "result3";
 
                 //번틀 값 설정
-                bundle.putString("CakeTestResult3",CakeTestResult3);
-                cakeTest2.setArguments(bundle);
+                bundle.putString("cakeTestResult3",cakeTestResult3);
+                CakeTest2.setArguments(bundle);
 
                 //이동
-                transaction.replace(R.id.caketest_start_fragment, cakeTest2);
+                transaction.replace(R.id.caketest_start_fragment, CakeTest2);
 
                 transaction.commit();
             }
         });
 
-        caketest_1_an3.setOnClickListener(new View.OnClickListener() {
+        cakeTest_1_an3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String CakeTestResult4 = "result4";
+                String cakeTestResult4 = "result4";
 
                 //번틀 값 설정
-                bundle.putString("CakeTestResult4",CakeTestResult4);
-                cakeTest2.setArguments(bundle);
+                bundle.putString("cakeTestResult4",cakeTestResult4);
+                CakeTest2.setArguments(bundle);
 
                 //이동
-                transaction.replace(R.id.caketest_start_fragment, cakeTest2);
+                transaction.replace(R.id.caketest_start_fragment, CakeTest2);
 
                 transaction.commit();
             }
