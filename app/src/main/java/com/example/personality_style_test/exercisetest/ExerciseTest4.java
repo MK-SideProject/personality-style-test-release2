@@ -46,10 +46,10 @@ public class ExerciseTest4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View ExerciseTest4 = inflater.inflate(R.layout.fragment_exercise_test4, container, false);
+        View exerciseTest4 = inflater.inflate(R.layout.fragment_exercise_test4, container, false);
 
-        Button exerciseTest_4_an1 = (Button) ExerciseTest4.findViewById(R.id.exercisetest_4_an1);
-        Button exerciseTest_4_an2 = (Button) ExerciseTest4.findViewById(R.id.exercisetest_4_an2);
+        Button exerciseTest_4_an1 = (Button) exerciseTest4.findViewById(R.id.exercisetest_4_an1);
+        Button exerciseTest_4_an2 = (Button) exerciseTest4.findViewById(R.id.exercisetest_4_an2);
 
 
         //전달한 번들 메소드 받기
@@ -67,7 +67,7 @@ public class ExerciseTest4 extends Fragment {
 
 
             //데이터 전달 및 프래그먼트 변경
-            ExerciseTest5 ExerciseTest5 = new ExerciseTest5();
+            ExerciseTest5 exerciseTest5 = new ExerciseTest5();
             //전달할 번들 생성
             Bundle bundleNext = new Bundle();
 
@@ -88,10 +88,10 @@ public class ExerciseTest4 extends Fragment {
                     bundleNext.putString("exerciseTestResult5",exerciseTestResult5);
                     bundleNext.putString("diet",diet);
                     //다음 프래그먼트로 값 이동
-                    ExerciseTest5.setArguments(bundleNext);
+                    exerciseTest5.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest5);
+                    transaction.replace(R.id.exercisetest_start_fragment, exerciseTest5);
 
                     transaction.commit();
                 }
@@ -110,16 +110,16 @@ public class ExerciseTest4 extends Fragment {
                     bundleNext.putString("exerciseTestResult5",exerciseTestResult5);
                     bundleNext.putString("diet",diet);
                     //다음 프래그먼트로 값 이동
-                    ExerciseTest5.setArguments(bundleNext);
+                    exerciseTest5.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest5);
+                    transaction.replace(R.id.exercisetest_start_fragment, exerciseTest5);
 
                     transaction.commit();
                 }
             });
         }
 
-            return ExerciseTest4;
+            return exerciseTest4;
     }
 }

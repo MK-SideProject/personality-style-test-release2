@@ -46,10 +46,10 @@ public class CakeTest6 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View CakeTest6 =  inflater.inflate(R.layout.fragment_cake_test6, container, false);
+        View cakeTest6 =  inflater.inflate(R.layout.fragment_cake_test6, container, false);
 
-        Button cakeTest_6_an1 = (Button) CakeTest6.findViewById(R.id.caketest_6_an1);
-        Button cakeTest_6_an2 = (Button) CakeTest6.findViewById(R.id.caketest_6_an2);
+        Button cakeTest_6_an1 = (Button) cakeTest6.findViewById(R.id.caketest_6_an1);
+        Button cakeTest_6_an2 = (Button) cakeTest6.findViewById(R.id.caketest_6_an2);
 
         //전달한 번들 메소드 받기
         Bundle bundle = getArguments();
@@ -64,7 +64,7 @@ public class CakeTest6 extends Fragment {
 
 
             //데이터 전달 및 프래그먼트 변경
-            CakeTest7 CakeTest7 = new CakeTest7();
+            CakeTest7 cakeTest7 = new CakeTest7();
             //전달할 번들 생성
             Bundle bundleNext = new Bundle();
 
@@ -83,10 +83,10 @@ public class CakeTest6 extends Fragment {
                     bundleNext.putString("cakeTestResult3",cakeTestResult3);
                     bundleNext.putString("cakeTestResult4",cakeTestResult4);
                     //다음 프래그먼트로 값 이동
-                    CakeTest7.setArguments(bundleNext);
+                    cakeTest7.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.caketest_start_fragment, CakeTest7);
+                    transaction.replace(R.id.caketest_start_fragment, cakeTest7);
 
                     transaction.commit();
                 }
@@ -102,16 +102,16 @@ public class CakeTest6 extends Fragment {
                     bundleNext.putString("cakeTestResult3",cakeTestResult3);
                     bundleNext.putString("cakeTestResult4",cakeTestResult4);
                     //다음 프래그먼트로 값 이동
-                    CakeTest7.setArguments(bundleNext);
+                    cakeTest7.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.caketest_start_fragment, CakeTest7);
+                    transaction.replace(R.id.caketest_start_fragment, cakeTest7);
 
                     transaction.commit();
                 }
             });
 
         }
-        return CakeTest6;
+        return cakeTest6;
     }
 }

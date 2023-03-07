@@ -39,11 +39,11 @@ public class CakeTest7 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View CakeTest7 =  inflater.inflate(R.layout.fragment_cake_test7, container, false);
+        View cakeTest7 =  inflater.inflate(R.layout.fragment_cake_test7, container, false);
 
 
-        Button cakeTest_7_an1 = (Button) CakeTest7.findViewById(R.id.caketest_7_an1);
-        Button cakeTest_7_an2 = (Button) CakeTest7.findViewById(R.id.caketest_7_an2);
+        Button cakeTest_7_an1 = (Button) cakeTest7.findViewById(R.id.caketest_7_an1);
+        Button cakeTest_7_an2 = (Button) cakeTest7.findViewById(R.id.caketest_7_an2);
 
         //전달한 번들 메소드 받기
         Bundle bundle = getArguments();
@@ -56,11 +56,6 @@ public class CakeTest7 extends Fragment {
             cakeTestResult3 = bundle.getString("cakeTestResult3");
             cakeTestResult4 = bundle.getString("cakeTestResult4");
 
-
-            //데이터 전달 및 프래그먼트 변경
-            CakeTest3 CakeTest3 = new CakeTest3();
-            //전달할 번들 생성
-            Bundle bundleNext = new Bundle();
 
             //프래그먼트 이동 선언
             FragmentManager mnger = getActivity().getSupportFragmentManager();
@@ -130,6 +125,6 @@ public class CakeTest7 extends Fragment {
             });
 
         }
-        return CakeTest7;
+        return cakeTest7;
     }
 }

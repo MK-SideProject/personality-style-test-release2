@@ -14,11 +14,7 @@ import android.widget.Toast;
 
 import com.example.personality_style_test.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link BankingTest6#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class BankingTest6 extends Fragment {
 
     private String bankingTestResult1;
@@ -48,11 +44,11 @@ public class BankingTest6 extends Fragment {
                              Bundle savedInstanceState) {
 
         //뷰 선언
-        View BankingTest6 = inflater.inflate(R.layout.fragment_banking_test_6, container, false);
+        View bankingTest6 = inflater.inflate(R.layout.fragment_banking_test_6, container, false);
 
-        Button bankingTest6_an1 = (Button) BankingTest6.findViewById(R.id.bankingtest_6_an1);
-        Button bankingTest6_an2 = (Button) BankingTest6.findViewById(R.id.bankingtest_6_an2);
-        Button bankingTest6_an3 = (Button) BankingTest6.findViewById(R.id.bankingtest_6_an3);
+        Button bankingTest6_an1 = (Button) bankingTest6.findViewById(R.id.bankingtest_6_an1);
+        Button bankingTest6_an2 = (Button) bankingTest6.findViewById(R.id.bankingtest_6_an2);
+        Button bankingTest6_an3 = (Button) bankingTest6.findViewById(R.id.bankingtest_6_an3);
 
         //전달한 번들 메소드 받기
         Bundle bundle = getArguments();
@@ -135,6 +131,6 @@ public class BankingTest6 extends Fragment {
             Toast.makeText(getContext(), "값이 없습니다", Toast.LENGTH_LONG).show();
         }
 
-        return BankingTest6;
+        return bankingTest6;
     }
 }

@@ -38,13 +38,14 @@ public class CakeTest1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View CakeTest1 =  inflater.inflate(R.layout.fragment_cake_test1, container, false);
-        Button cakeTest_1_an1 = (Button) CakeTest1.findViewById(R.id.caketest_1_an1);
-        Button cakeTest_1_an2 = (Button) CakeTest1.findViewById(R.id.caketest_1_an2);
-        Button cakeTest_1_an3 = (Button) CakeTest1.findViewById(R.id.caketest_1_an3);
+        View cakeTest1 =  inflater.inflate(R.layout.fragment_cake_test1, container, false);
+
+        Button cakeTest_1_an1 = (Button) cakeTest1.findViewById(R.id.caketest_1_an1);
+        Button cakeTest_1_an2 = (Button) cakeTest1.findViewById(R.id.caketest_1_an2);
+        Button cakeTest_1_an3 = (Button) cakeTest1.findViewById(R.id.caketest_1_an3);
 
 
-        CakeTest2 CakeTest2 = new CakeTest2();
+        CakeTest2 cakeTest2 = new CakeTest2();
         Bundle bundle = new Bundle();
 
         //프래그먼트 이동 선언
@@ -58,10 +59,10 @@ public class CakeTest1 extends Fragment {
 
                 //번틀 값 설정
                 bundle.putString("cakeTestResult2",cakeTestResult2);
-                CakeTest2.setArguments(bundle);
+                cakeTest2.setArguments(bundle);
 
                 //이동
-                transaction.replace(R.id.caketest_start_fragment, CakeTest2);
+                transaction.replace(R.id.caketest_start_fragment, cakeTest2);
 
                 transaction.commit();
             }
@@ -74,10 +75,10 @@ public class CakeTest1 extends Fragment {
 
                 //번틀 값 설정
                 bundle.putString("cakeTestResult3",cakeTestResult3);
-                CakeTest2.setArguments(bundle);
+                cakeTest2.setArguments(bundle);
 
                 //이동
-                transaction.replace(R.id.caketest_start_fragment, CakeTest2);
+                transaction.replace(R.id.caketest_start_fragment, cakeTest2);
 
                 transaction.commit();
             }
@@ -90,14 +91,14 @@ public class CakeTest1 extends Fragment {
 
                 //번틀 값 설정
                 bundle.putString("cakeTestResult4",cakeTestResult4);
-                CakeTest2.setArguments(bundle);
+                cakeTest2.setArguments(bundle);
 
                 //이동
-                transaction.replace(R.id.caketest_start_fragment, CakeTest2);
+                transaction.replace(R.id.caketest_start_fragment, cakeTest2);
 
                 transaction.commit();
             }
         });
-        return CakeTest1;
+        return cakeTest1;
     }
 }

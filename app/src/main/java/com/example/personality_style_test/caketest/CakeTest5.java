@@ -45,11 +45,11 @@ public class CakeTest5 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View CakeTest5 =  inflater.inflate(R.layout.fragment_cake_test5, container, false);
+        View cakeTest5 =  inflater.inflate(R.layout.fragment_cake_test5, container, false);
 
-        Button cakeTest_5_an1 = (Button) CakeTest5.findViewById(R.id.caketest_5_an1);
-        Button cakeTest_5_an2 = (Button) CakeTest5.findViewById(R.id.caketest_5_an2);
-        Button cakeTest_5_an3 = (Button) CakeTest5.findViewById(R.id.caketest_5_an3);
+        Button cakeTest_5_an1 = (Button) cakeTest5.findViewById(R.id.caketest_5_an1);
+        Button cakeTest_5_an2 = (Button) cakeTest5.findViewById(R.id.caketest_5_an2);
+        Button cakeTest_5_an3 = (Button) cakeTest5.findViewById(R.id.caketest_5_an3);
 
         //전달한 번들 메소드 받기
         Bundle bundle = getArguments();
@@ -64,7 +64,7 @@ public class CakeTest5 extends Fragment {
 
 
             //데이터 전달 및 프래그먼트 변경
-            CakeTest6 CakeTest6 = new CakeTest6();
+            CakeTest6 cakeTest6 = new CakeTest6();
             //전달할 번들 생성
             Bundle bundleNext = new Bundle();
 
@@ -82,10 +82,10 @@ public class CakeTest5 extends Fragment {
                     bundleNext.putString("cakeTestResult3",cakeTestResult3);
                     bundleNext.putString("cakeTestResult4",cakeTestResult4);
                     //다음 프래그먼트로 값 이동
-                    CakeTest6.setArguments(bundleNext);
+                    cakeTest6.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.caketest_start_fragment, CakeTest6);
+                    transaction.replace(R.id.caketest_start_fragment, cakeTest6);
 
                     transaction.commit();
                 }
@@ -101,10 +101,10 @@ public class CakeTest5 extends Fragment {
                     bundleNext.putString("cakeTestResult3",cakeTestResult3);
                     bundleNext.putString("cakeTestResult4",cakeTestResult4);
                     //다음 프래그먼트로 값 이동
-                    CakeTest6.setArguments(bundleNext);
+                    cakeTest6.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.caketest_start_fragment, CakeTest6);
+                    transaction.replace(R.id.caketest_start_fragment, cakeTest6);
 
                     transaction.commit();
                 }
@@ -120,10 +120,10 @@ public class CakeTest5 extends Fragment {
                     bundleNext.putString("cakeTestResult3",cakeTestResult3);
                     bundleNext.putString("cakeTestResult4",cakeTestResult4);
                     //다음 프래그먼트로 값 이동
-                    CakeTest6.setArguments(bundleNext);
+                    cakeTest6.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.caketest_start_fragment, CakeTest6);
+                    transaction.replace(R.id.caketest_start_fragment, cakeTest6);
 
                     transaction.commit();
                 }
@@ -131,6 +131,6 @@ public class CakeTest5 extends Fragment {
 
         }
 
-        return CakeTest5;
+        return cakeTest5;
     }
 }
