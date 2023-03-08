@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.example.personality_style_test.R;
 
-public class personality_20_Activity extends AppCompatActivity {
+public class personality_20_Activity extends AppCompatActivity {fgbsfbf
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
