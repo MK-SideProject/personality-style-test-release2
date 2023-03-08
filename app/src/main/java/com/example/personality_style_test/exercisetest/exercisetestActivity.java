@@ -30,9 +30,9 @@ public class exercisetestActivity extends AppCompatActivity {
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
 
-                ExerciseTest1 ExerciseTest1 = new ExerciseTest1();
+                ExerciseTest1 exerciseTest1 = new ExerciseTest1();
 
-                transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest1).commit();
+                transaction.replace(R.id.exercisetest_start_fragment, exerciseTest1).commit();
             }
         });
     }

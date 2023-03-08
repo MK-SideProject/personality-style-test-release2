@@ -1,6 +1,8 @@
 package com.example.personality_style_test.personality;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.widget.Button;
 
 import com.example.personality_style_test.R;
 import com.example.personality_style_test.bankingtest.bankingtest_1_Activity;
+import com.example.personality_style_test.santatest.SantaTest1;
 
 public class personalitytest_Activity extends AppCompatActivity {
 
@@ -17,16 +20,19 @@ public class personalitytest_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personalitytest);
 
-        Button personalitytest_start = (Button) findViewById(R.id.personalitytest_start);
+        Button personalityTestStart = (Button) findViewById(R.id.personalitytest_start);
 
-        personalitytest_start.setOnClickListener(new View.OnClickListener() {
+        personalityTestStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                // 화면 전환 프래그먼트 선언 및 초기 화면 설정
+                FragmentManager manager = getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
 
-                Intent intent = new Intent(getBaseContext(), personality_1_Activity.class);
+                Personality1 personality1 = new Personality1();
 
-                startActivity(intent);
+                transaction.replace(R.id.personalitytest_start_fragment, personality1).commit();
             }
         });
     }

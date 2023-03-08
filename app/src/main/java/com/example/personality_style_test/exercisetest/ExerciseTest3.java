@@ -15,11 +15,7 @@ import android.widget.Button;
 import com.example.personality_style_test.R;
 import com.example.personality_style_test.caketest.CakeTest3;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ExerciseTest3#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class ExerciseTest3 extends Fragment {
 
    private String exerciseTestResult1;
@@ -53,11 +49,11 @@ public class ExerciseTest3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View ExerciseTest3 = inflater.inflate(R.layout.fragment_exercise_test3, container, false);
+        View exerciseTest3 = inflater.inflate(R.layout.fragment_exercise_test3, container, false);
 
-        Button exerciseTest_3_an1 = (Button) ExerciseTest3.findViewById(R.id.exercisetest_3_an1);
-        Button exerciseTest_3_an2 = (Button) ExerciseTest3.findViewById(R.id.exercisetest_3_an2);
-        Button exerciseTest_3_an3 = (Button) ExerciseTest3.findViewById(R.id.exercisetest_3_an3);
+        Button exerciseTest_3_an1 = (Button) exerciseTest3.findViewById(R.id.exercisetest_3_an1);
+        Button exerciseTest_3_an2 = (Button) exerciseTest3.findViewById(R.id.exercisetest_3_an2);
+        Button exerciseTest_3_an3 = (Button) exerciseTest3.findViewById(R.id.exercisetest_3_an3);
 
         //전달한 번들 메소드 받기
         Bundle bundle = getArguments();
@@ -73,7 +69,7 @@ public class ExerciseTest3 extends Fragment {
 
 
             //데이터 전달 및 프래그먼트 변경
-            ExerciseTest4 ExerciseTest4 = new ExerciseTest4();
+            ExerciseTest4 exerciseTest4 = new ExerciseTest4();
             //전달할 번들 생성
             Bundle bundleNext = new Bundle();
 
@@ -97,10 +93,10 @@ public class ExerciseTest3 extends Fragment {
                     bundleNext.putString("exerciseTestResult5",exerciseTestResult5);
                     bundleNext.putString("diet",diet);
                     //다음 프래그먼트로 값 이동
-                    ExerciseTest4.setArguments(bundleNext);
+                    exerciseTest4.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest4);
+                    transaction.replace(R.id.exercisetest_start_fragment, exerciseTest4);
 
                     transaction.commit();
                 }
@@ -121,10 +117,10 @@ public class ExerciseTest3 extends Fragment {
                     bundleNext.putString("exerciseTestResult5",exerciseTestResult5);
                     bundleNext.putString("diet",diet);
                     //다음 프래그먼트로 값 이동
-                    ExerciseTest4.setArguments(bundleNext);
+                    exerciseTest4.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest4);
+                    transaction.replace(R.id.exercisetest_start_fragment, exerciseTest4);
 
                     transaction.commit();
                 }
@@ -145,15 +141,15 @@ public class ExerciseTest3 extends Fragment {
                     bundleNext.putString("exerciseTestResult5",exerciseTestResult5);
                     bundleNext.putString("diet",diet);
                     //다음 프래그먼트로 값 이동
-                    ExerciseTest4.setArguments(bundleNext);
+                    exerciseTest4.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest4);
+                    transaction.replace(R.id.exercisetest_start_fragment, exerciseTest4);
 
                     transaction.commit();
                 }
             });
         }
-        return ExerciseTest3;
+        return exerciseTest3;
     }
 }

@@ -41,13 +41,13 @@ public class ExerciseTest2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View ExerciseTest2 = inflater.inflate(R.layout.fragment_exercise_test2, container, false);
+        View exerciseTest2 = inflater.inflate(R.layout.fragment_exercise_test2, container, false);
 
-        Button exerciseTest_2_an1 = (Button) ExerciseTest2.findViewById(R.id.exercisetest_2_an1);
-        Button exerciseTest_2_an2 = (Button) ExerciseTest2.findViewById(R.id.exercisetest_2_an2);
-        Button exerciseTest_2_an3 = (Button) ExerciseTest2.findViewById(R.id.exercisetest_2_an3);
+        Button exerciseTest_2_an1 = (Button) exerciseTest2.findViewById(R.id.exercisetest_2_an1);
+        Button exerciseTest_2_an2 = (Button) exerciseTest2.findViewById(R.id.exercisetest_2_an2);
+        Button exerciseTest_2_an3 = (Button) exerciseTest2.findViewById(R.id.exercisetest_2_an3);
 
-        ExerciseTest3 ExerciseTest3 = new ExerciseTest3();
+        ExerciseTest3 exerciseTest3 = new ExerciseTest3();
         Bundle bundle = new Bundle();
 
         //프래그먼트 이동 선언
@@ -67,10 +67,10 @@ public class ExerciseTest2 extends Fragment {
                 bundle.putString("exerciseTestResult2",exerciseTestResult2);
                 bundle.putString("exerciseTestResult3",exerciseTestResult3);
                 bundle.putString("exerciseTestResult4",exerciseTestResult4);
-                ExerciseTest3.setArguments(bundle);
+                exerciseTest3.setArguments(bundle);
 
                 //이동
-                transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest3);
+                transaction.replace(R.id.exercisetest_start_fragment, exerciseTest3);
 
                 transaction.commit();
             }
@@ -85,10 +85,10 @@ public class ExerciseTest2 extends Fragment {
 
                 //번틀 값 설정
                 bundle.putString("exerciseTestResult1",exerciseTestResult1);
-                ExerciseTest3.setArguments(bundle);
+                exerciseTest3.setArguments(bundle);
 
                 //이동
-                transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest3);
+                transaction.replace(R.id.exercisetest_start_fragment, exerciseTest3);
 
                 transaction.commit();
             }
@@ -102,15 +102,15 @@ public class ExerciseTest2 extends Fragment {
 
                 //번틀 값 설정
                 bundle.putString("exerciseTestResult5",exerciseTestResult5);
-                ExerciseTest3.setArguments(bundle);
+                exerciseTest3.setArguments(bundle);
 
                 //이동
-                transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest3);
+                transaction.replace(R.id.exercisetest_start_fragment, exerciseTest3);
 
                 transaction.commit();
             }
         });
 
-        return ExerciseTest2;
+        return exerciseTest2;
     }
 }

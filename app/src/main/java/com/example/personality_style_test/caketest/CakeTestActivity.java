@@ -29,9 +29,9 @@ public class CakeTestActivity extends AppCompatActivity {
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
 
-                CakeTest1 CakeTest1 = new CakeTest1();
+                CakeTest1 cakeTest1 = new CakeTest1();
 
-                transaction.replace(R.id.caketest_start_fragment, CakeTest1).commit();
+                transaction.replace(R.id.caketest_start_fragment, cakeTest1).commit();
             }
         });
     }

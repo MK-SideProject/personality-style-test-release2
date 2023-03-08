@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".santatest.SantaTest4">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/santatest_4">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/santatest_4_an1"
+        android:layout_width="340dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="387dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="341dp"
+        android:background="@drawable/santatest_shape"
+        android:text="아직 할 일이 남았다. 내가 도와주진 못하고 경찰서에 신고해 아이 위치를 알려준다."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+    <Button
+        android:id="@+id/santatest_4_an2"
+        android:layout_width="347dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/santatest_shape"
+        android:text="바빠도 아이를 도와줘야지! 직접 파출소까지 데려다준다."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/santatest_4_an3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/santatest_4_an1" />
+
+    <Button
+        android:id="@+id/santatest_4_an3"
+        android:layout_width="342dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="527dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="114dp"
+        android:background="@drawable/santatest_shape"
+        android:text="아직 배달할 선물이 많이 남았다. 배달부터 다녀온다."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

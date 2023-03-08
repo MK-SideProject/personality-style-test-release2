@@ -47,12 +47,12 @@ public class ExerciseTest6 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View ExerciseTest6 = inflater.inflate(R.layout.fragment_exercise_test6, container, false);
+        View exerciseTest6 = inflater.inflate(R.layout.fragment_exercise_test6, container, false);
 
-        Button exerciseTest_6_an1 = (Button) ExerciseTest6.findViewById(R.id.exercisetest_6_an1);
-        Button exerciseTest_6_an2 = (Button) ExerciseTest6.findViewById(R.id.exercisetest_6_an2);
-        Button exerciseTest_6_an3 = (Button) ExerciseTest6.findViewById(R.id.exercisetest_6_an3);
-        Button exerciseTest_6_an4 = (Button) ExerciseTest6.findViewById(R.id.exercisetest_6_an4);
+        Button exerciseTest_6_an1 = (Button) exerciseTest6.findViewById(R.id.exercisetest_6_an1);
+        Button exerciseTest_6_an2 = (Button) exerciseTest6.findViewById(R.id.exercisetest_6_an2);
+        Button exerciseTest_6_an3 = (Button) exerciseTest6.findViewById(R.id.exercisetest_6_an3);
+        Button exerciseTest_6_an4 = (Button) exerciseTest6.findViewById(R.id.exercisetest_6_an4);
 
         //전달한 번들 메소드 받기
         Bundle bundle = getArguments();
@@ -225,6 +225,6 @@ public class ExerciseTest6 extends Fragment {
             });
         }
 
-            return ExerciseTest6;
+            return exerciseTest6;
     }
 }
