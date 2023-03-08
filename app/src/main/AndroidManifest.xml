@@ -470,7 +470,7 @@
             android:name=".bankingtest.bankingtest_1_Activity"
             android:exported="true" />
         <activity
-            android:name=".triptest.triptestActivity"
+            android:name=".triptest.TripTestActivity"
             android:exported="true" />
         <activity
             android:name=".santatest.santatestActivity"
