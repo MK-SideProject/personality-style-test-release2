@@ -1,35 +1,34 @@
-package com.example.personality_style_test.foodtest;
+package com.example.personality_style_test.planttest;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.personality_style_test.R;
 
-public class FoodTestActivity extends AppCompatActivity {
+public class PlantTestActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_foodtest);
+        setContentView(R.layout.activity_planttest);
 
-        Button foodTestStart = (Button) findViewById(R.id.foodtest_start);
+        Button plantTestStart = (Button) findViewById(R.id.planttest_start);
 
-        foodTestStart.setOnClickListener(new View.OnClickListener() {
+        plantTestStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 화면 전환 프래그먼트 선언 및 초기 화면 설정
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
 
-                FoodTest1 foodTest1 = new FoodTest1();
+                PlantTest1 plantTest1 = new PlantTest1();
 
-                transaction.replace(R.id.foodtest_start_fragment, foodTest1).commit();
-
+                transaction.replace(R.id.planttest_start_fragment, plantTest1).commit();
             }
         });
     }

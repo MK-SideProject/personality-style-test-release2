@@ -16,7 +16,7 @@ import com.example.personality_style_test.bankingtest.BankingTestActivity;
 import com.example.personality_style_test.colortest.ColorTestActivity;
 import com.example.personality_style_test.exercisetest.exercisetestActivity;
 
-import com.example.personality_style_test.planttest.planttestActivity;
+import com.example.personality_style_test.planttest.PlantTestActivity;
 
 import com.example.personality_style_test.triptest.TripTestActivity;
 
@@ -58,7 +58,7 @@ public class PersonalityActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if(position==3){
-                    Intent intent = new Intent(PersonalityActivity.this, planttestActivity.class);
+                    Intent intent = new Intent(PersonalityActivity.this, PlantTestActivity.class);
                     startActivity(intent);
                 }
                 if(position==4){

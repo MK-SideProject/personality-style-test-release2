@@ -476,7 +476,7 @@
             android:name=".santatest.santatestActivity"
             android:exported="true" />
         <activity
-            android:name=".planttest.planttestActivity"
+            android:name=".planttest.PlantTestActivity"
             android:exported="true" />
         <activity
             android:name=".exercisetest.exercisetestActivity"
