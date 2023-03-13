@@ -13,7 +13,7 @@ import android.widget.ListView;
 
 import com.example.personality_style_test.caketest.CakeTestActivity;
 
-import com.example.personality_style_test.foodtest.foodtestActivity;
+import com.example.personality_style_test.foodtest.FoodTestActivity;
 
 import com.example.personality_style_test.santatest.santatestActivity;
 
@@ -41,7 +41,7 @@ public class HumorActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //final PersonalityItem item = (PersonalityItem) adapter.getItem(position);
                 if(position==0){
-                    Intent intent = new Intent(HumorActivity.this, foodtestActivity.class);
+                    Intent intent = new Intent(HumorActivity.this, FoodTestActivity.class);
                     startActivity(intent);
                 }
                 if(position==1){

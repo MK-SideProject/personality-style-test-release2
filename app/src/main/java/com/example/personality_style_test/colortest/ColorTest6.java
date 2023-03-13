@@ -63,11 +63,6 @@ public class ColorTest6 extends Fragment {
             colorTestResult4 = bundle.getString("colorTestResult4");
             colorTestResult5 = bundle.getString("colorTestResult5");
 
-//            //데이터 전달 및 프래그먼트 변경
-//            ColorTest_6 colorTest6 = new ColorTest_6();
-//            //전달할 번들 생성
-//            Bundle bundleNext = new Bundle();
-
             //프래그먼트 이동 선언
             FragmentManager mnger = getActivity().getSupportFragmentManager();
             FragmentTransaction transaction = mnger.beginTransaction();
