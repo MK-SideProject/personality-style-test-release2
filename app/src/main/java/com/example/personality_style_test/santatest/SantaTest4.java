@@ -90,9 +90,6 @@ public class SantaTest4 extends Fragment {
                 @Override
                 public void onClick(View view) {
 
-                    Intent intent3 = getIntent();
-                    Bundle bundle = intent3.getExtras();
-
                     santaTestResult1 = "result1";
 
                     bundleNext.putString("santaTestResult1", santaTestResult1);

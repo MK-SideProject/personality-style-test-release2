@@ -1,49 +1,35 @@
 package com.example.personality_style_test.personality;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.personality_style_test.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Personality3#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class Personality3 extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private int e;
+    private int i;
+    private int f;
+    private int t;
 
     public Personality3() {
-        // Required empty public constructor
+
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Personality3.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static Personality3 newInstance(String param1, String param2) {
         Personality3 fragment = new Personality3();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,16 +37,75 @@ public class Personality3 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_personality3, container, false);
+
+        View personalityTest3 = inflater.inflate(R.layout.fragment_personality3, container, false);
+
+        Button personality_3_yes = (Button) personalityTest3.findViewById(R.id.personality_3_yes);
+        Button personality_3_no = (Button) personalityTest3.findViewById(R.id.personality_3_no);
+
+        //전달한 번들 메소드 받기
+        Bundle bundle = getArguments();
+
+
+        //값이 있다면
+        if(bundle != null) {
+            e = bundle.getInt("e");
+            i = bundle.getInt("i");
+            f = bundle.getInt("f");
+            t = bundle.getInt("t");
+
+            //데이터 전달 및 프래그먼트 변경
+            Personality4 personality4 = new Personality4();
+            //전달할 번들 생성
+            Bundle bundleNext = new Bundle();
+
+            //프래그먼트 이동 선언
+            FragmentManager mnger = getActivity().getSupportFragmentManager();
+            FragmentTransaction transaction = mnger.beginTransaction();
+            personality_3_yes.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    int p = 0;
+                    p += 1;
+
+                    bundleNext.putInt("e", e);
+                    bundleNext.putInt("i", i);
+                    bundleNext.putInt("f", f);
+                    bundleNext.putInt("t", t);
+                    bundleNext.putInt("p", p);
+                    personality4.setArguments(bundleNext);
+
+                    transaction.replace(R.id.personalitytest_start_fragment, personality4);
+                    transaction.commit();
+
+                }
+            });
+
+            personality_3_no.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    int j = 0;
+                    j += 1;
+
+                    bundleNext.putInt("e", e);
+                    bundleNext.putInt("i", i);
+                    bundleNext.putInt("f", f);
+                    bundleNext.putInt("t", t);
+                    bundleNext.putInt("j", j);
+                    personality4.setArguments(bundleNext);
+
+                    transaction.replace(R.id.personalitytest_start_fragment, personality4);
+                    transaction.commit();
+                }
+            });
+        }
+        return personalityTest3;
     }
 }
