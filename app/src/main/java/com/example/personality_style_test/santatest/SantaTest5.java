@@ -81,7 +81,7 @@ public class SantaTest5 extends Fragment {
                     santaTest6.setArguments(bundle);
 
                     transaction.replace(R.id.santatest_start_fragment, santaTest6);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -97,7 +97,7 @@ public class SantaTest5 extends Fragment {
                     santaTest6.setArguments(bundle);
 
                     transaction.replace(R.id.santatest_start_fragment, santaTest6);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
 
                 }
             });
