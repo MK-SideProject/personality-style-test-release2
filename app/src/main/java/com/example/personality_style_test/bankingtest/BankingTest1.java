@@ -64,7 +64,7 @@ public class BankingTest1 extends Fragment {
                 //이동
                 transaction.replace(R.id.bankingtest_start_fragment, bankingTest2);
 
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
 
 
             }
@@ -84,7 +84,7 @@ public class BankingTest1 extends Fragment {
                 //이동
                 transaction.replace(R.id.bankingtest_start_fragment, bankingTest2);
 
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 
@@ -100,7 +100,7 @@ public class BankingTest1 extends Fragment {
                 //이동
                 transaction.replace(R.id.bankingtest_start_fragment, bankingTest2);
 
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 

@@ -82,7 +82,7 @@ public class BankingTest3 extends Fragment {
                     //이동
                     transaction.replace(R.id.bankingtest_start_fragment, bankingTest4);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -100,7 +100,7 @@ public class BankingTest3 extends Fragment {
                     //이동
                     transaction.replace(R.id.bankingtest_start_fragment, bankingTest4);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -120,7 +120,7 @@ public class BankingTest3 extends Fragment {
                     //이동
                     transaction.replace(R.id.bankingtest_start_fragment, bankingTest4);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
         }
