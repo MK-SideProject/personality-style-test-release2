@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,6 +72,8 @@ public class SantaTest1 extends Fragment {
 
                 transaction.replace(R.id.santatest_start_fragment, santaTest2);
                 transaction.addToBackStack(null).commit();
+
+
             }
         });
 

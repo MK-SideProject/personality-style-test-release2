@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,9 +54,8 @@ public class SantaTest4 extends Fragment {
         //전달한 번들 메소드 받기
         Bundle bundle = getArguments();
 
-
-        //값이 있다면
         if(bundle != null) {
+
             santaTestResult1 = bundle.getString("santaTestResult1");
             santaTestResult2 = bundle.getString("santaTestResult2");
             santaTestResult3 = bundle.getString("santaTestResult3");
@@ -98,6 +98,7 @@ public class SantaTest4 extends Fragment {
                     bundleNext.putString("santaTestResult4", santaTestResult4);
                     santaTest5.setArguments(bundle);
 
+
                     transaction.replace(R.id.santatest_start_fragment, santaTest5);
                     transaction.addToBackStack(null).commit();
                 }
@@ -120,6 +121,54 @@ public class SantaTest4 extends Fragment {
                 }
             });
 
+
+        }else{
+            //데이터 전달 및 프래그먼트 변경
+            SantaTest5 santaTest5 = new SantaTest5();
+            //전달할 번들 생성
+            Bundle bundleNext = new Bundle();
+
+            //프래그먼트 이동 선언
+            FragmentManager mnger = getActivity().getSupportFragmentManager();
+            FragmentTransaction transaction = mnger.beginTransaction();
+
+            santaTest_4_an1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    transaction.replace(R.id.santatest_start_fragment, santaTest5);
+                    transaction.addToBackStack(null).commit();
+                }
+            });
+
+            santaTest_4_an2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    santaTestResult1 = "result1";
+
+                    bundleNext.putString("santaTestResult1", santaTestResult1);
+                    santaTest5.setArguments(bundleNext);
+
+
+                    transaction.replace(R.id.santatest_start_fragment, santaTest5);
+                    transaction.addToBackStack(null).commit();
+                }
+            });
+
+            santaTest_4_an3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    santaTestResult2 = "result2";
+
+                    bundleNext.putString("santaTestResult2", santaTestResult2);
+                    santaTest5.setArguments(bundleNext);
+
+                    transaction.replace(R.id.santatest_start_fragment, santaTest5);
+                    transaction.addToBackStack(null).commit();
+                }
+            });
         }
 
             return santaTest4;

@@ -53,7 +53,7 @@ public class SantaTest6 extends Fragment {
         Bundle bundle = getArguments();
 
 
-        //값이 있다면
+
         if(bundle != null) {
             santaTestResult1 = bundle.getString("santaTestResult1");
             santaTestResult2 = bundle.getString("santaTestResult2");
@@ -139,6 +139,51 @@ public class SantaTest6 extends Fragment {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult3Fg);
                         transaction.commit();
                     }
+                }
+            });
+
+        }else{
+
+            //데이터 전달 및 프래그먼트 변경
+            SantaTestResult1Fg santaTestResult1Fg = new SantaTestResult1Fg();
+            SantaTestResult2Fg santaTestResult2Fg = new SantaTestResult2Fg();
+            SantaTestResult3Fg santaTestResult3Fg = new SantaTestResult3Fg();
+            SantaTestResult4Fg santaTestResult4Fg = new SantaTestResult4Fg();
+
+            //전달할 번들 생성
+            Bundle bundleNext = new Bundle();
+
+            //프래그먼트 이동 선언
+            FragmentManager mnger = getActivity().getSupportFragmentManager();
+            FragmentTransaction transaction = mnger.beginTransaction();
+
+            santaTest_6_an1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    transaction.replace(R.id.santatest_start_fragment, santaTestResult3Fg);
+                    transaction.commit();
+
+                }
+            });
+
+            santaTest_6_an2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    transaction.replace(R.id.santatest_start_fragment, santaTestResult3Fg);
+                    transaction.commit();
+
+                }
+            });
+
+            santaTest_6_an3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    transaction.replace(R.id.santatest_start_fragment, santaTestResult3Fg);
+                    transaction.commit();
+
                 }
             });
         }
