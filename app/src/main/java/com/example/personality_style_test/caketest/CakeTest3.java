@@ -90,7 +90,7 @@ public class CakeTest3 extends Fragment {
                     //이동
                     transaction.replace(R.id.caketest_start_fragment, cakeTest4);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -109,7 +109,7 @@ public class CakeTest3 extends Fragment {
                     //이동
                     transaction.replace(R.id.caketest_start_fragment, cakeTest4);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -128,7 +128,7 @@ public class CakeTest3 extends Fragment {
                     //이동
                     transaction.replace(R.id.caketest_start_fragment, cakeTest4);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
         }

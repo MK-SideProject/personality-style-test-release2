@@ -93,7 +93,7 @@ public class ExerciseTest4 extends Fragment {
                     //이동
                     transaction.replace(R.id.exercisetest_start_fragment, exerciseTest5);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -115,7 +115,7 @@ public class ExerciseTest4 extends Fragment {
                     //이동
                     transaction.replace(R.id.exercisetest_start_fragment, exerciseTest5);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
         }

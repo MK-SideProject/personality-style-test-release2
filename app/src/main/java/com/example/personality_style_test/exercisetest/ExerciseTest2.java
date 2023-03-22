@@ -72,7 +72,7 @@ public class ExerciseTest2 extends Fragment {
                 //이동
                 transaction.replace(R.id.exercisetest_start_fragment, exerciseTest3);
 
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 
@@ -90,7 +90,7 @@ public class ExerciseTest2 extends Fragment {
                 //이동
                 transaction.replace(R.id.exercisetest_start_fragment, exerciseTest3);
 
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
         exerciseTest_2_an3.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +107,7 @@ public class ExerciseTest2 extends Fragment {
                 //이동
                 transaction.replace(R.id.exercisetest_start_fragment, exerciseTest3);
 
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 

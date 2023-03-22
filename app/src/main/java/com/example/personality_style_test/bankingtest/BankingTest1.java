@@ -101,6 +101,7 @@ public class BankingTest1 extends Fragment {
                 transaction.replace(R.id.bankingtest_start_fragment, bankingTest2);
 
                 transaction.addToBackStack(null).commit();
+
             }
         });
 

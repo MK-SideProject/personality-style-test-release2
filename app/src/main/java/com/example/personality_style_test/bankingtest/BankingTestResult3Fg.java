@@ -71,7 +71,7 @@ public class BankingTestResult3Fg extends Fragment {
                 }
             }
         });
-        
+
         return BankingTestResult3;
     }
 }
