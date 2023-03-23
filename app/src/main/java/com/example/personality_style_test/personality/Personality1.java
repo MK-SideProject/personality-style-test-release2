@@ -24,7 +24,7 @@ public class Personality1 extends Fragment {
     }
 
 
-    public static Personality1 newInstance(String param1, String param2) {
+    public static Personality1 newInstance() {
         Personality1 fragment = new Personality1();
         Bundle args = new Bundle();
         fragment.setArguments(args);
@@ -61,7 +61,7 @@ public class Personality1 extends Fragment {
                 personality2.setArguments(bundle);
 
                 transaction.replace(R.id.personalitytest_start_fragment, personality2);
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 
@@ -77,7 +77,7 @@ public class Personality1 extends Fragment {
                 personality2.setArguments(bundle);
 
                 transaction.replace(R.id.personalitytest_start_fragment, personality2);
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 

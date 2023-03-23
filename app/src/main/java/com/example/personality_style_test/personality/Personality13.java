@@ -93,7 +93,7 @@ public class Personality13 extends Fragment {
                     personality14.setArguments(bundleNext);
 
                     transaction.replace(R.id.personalitytest_start_fragment, personality14);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -114,7 +114,7 @@ public class Personality13 extends Fragment {
                     personality14.setArguments(bundleNext);
 
                     transaction.replace(R.id.personalitytest_start_fragment, personality14);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
 
                 }
             });
