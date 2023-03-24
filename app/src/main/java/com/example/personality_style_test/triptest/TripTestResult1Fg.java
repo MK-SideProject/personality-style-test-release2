@@ -1,5 +1,7 @@
 package com.example.personality_style_test.triptest;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,7 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.personality_style_test.PersonalityActivity;
 import com.example.personality_style_test.R;
+import com.example.personality_style_test.colortest.ColorTestActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -41,7 +45,26 @@ public class TripTestResult1Fg extends Fragment {
 
         Button tripTestRestart = (Button) tripTestResult1Fg.findViewById(R.id.triptest_restart);
         Button tripTestList = (Button) tripTestResult1Fg.findViewById(R.id.triptest_list);
+        Activity thisActivity = getActivity();
 
+        tripTestList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (thisActivity != null) {
+                    startActivity(new Intent(thisActivity, PersonalityActivity.class));
+                    thisActivity.finish();
+                }
+            }
+        });
+        tripTestRestart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(thisActivity != null) {
+                    startActivity(new Intent(thisActivity, TripTestActivity.class));
+                    thisActivity.finish();
+                }
+            }
+        });
         return tripTestResult1Fg;
     }
 }

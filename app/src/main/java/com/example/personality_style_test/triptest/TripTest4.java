@@ -77,7 +77,7 @@ public class TripTest4 extends Fragment {
 
                     tripTest5.setArguments(bundleNext);
                     transaction.replace(R.id.triptest_start_fragment, tripTest5);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -88,7 +88,7 @@ public class TripTest4 extends Fragment {
 
                     tripTest5.setArguments(bundleNext);
                     transaction.replace(R.id.triptest_start_fragment, tripTest5);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -99,7 +99,7 @@ public class TripTest4 extends Fragment {
 
                     tripTest5.setArguments(bundleNext);
                     transaction.replace(R.id.triptest_start_fragment, tripTest5);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
         }

@@ -56,7 +56,7 @@ public class ColorTest1 extends Fragment {
                 colorTest2.setArguments(bundle);
 
                 transaction.replace(R.id.colortest_start_fragment, colorTest2);
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 
@@ -69,7 +69,7 @@ public class ColorTest1 extends Fragment {
                 colorTest2.setArguments(bundle);
 
                 transaction.replace(R.id.colortest_start_fragment, colorTest2);
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 
@@ -82,7 +82,7 @@ public class ColorTest1 extends Fragment {
                 colorTest2.setArguments(bundle);
 
                 transaction.replace(R.id.colortest_start_fragment, colorTest2);
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 
@@ -95,7 +95,7 @@ public class ColorTest1 extends Fragment {
                 colorTest2.setArguments(bundle);
 
                 transaction.replace(R.id.colortest_start_fragment, colorTest2);
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 
