@@ -1,5 +1,7 @@
 package com.example.personality_style_test.planttest;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,7 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.personality_style_test.HumorActivity;
 import com.example.personality_style_test.R;
+import com.example.personality_style_test.foodtest.FoodTestActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -39,6 +43,26 @@ public class PlantTestResult3Fg extends Fragment {
 
         Button plantTestRestart = (Button) plantTestResult3Fg.findViewById(R.id.planttest_restart);
         Button plantTestList = (Button) plantTestResult3Fg.findViewById(R.id.planttest_list);
+        Activity thisActivity = getActivity();
+
+        plantTestRestart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (thisActivity != null) {
+                    startActivity(new Intent(thisActivity, FoodTestActivity.class));
+                    thisActivity.finish();
+                }
+            }
+        });
+        plantTestList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (thisActivity != null) {
+                    startActivity(new Intent(thisActivity, HumorActivity.class));
+                    thisActivity.finish();
+                }
+            }
+        });
 
         return plantTestResult3Fg;
     }

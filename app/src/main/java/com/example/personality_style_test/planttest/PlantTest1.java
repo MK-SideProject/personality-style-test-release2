@@ -57,7 +57,7 @@ public class PlantTest1 extends Fragment {
                 plantTest2.setArguments(bundle);
 
                 transaction.replace(R.id.planttest_start_fragment, plantTest2);
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
         plantTest1_an2.setOnClickListener(new View.OnClickListener() {
@@ -69,7 +69,7 @@ public class PlantTest1 extends Fragment {
                 plantTest2.setArguments(bundle);
 
                 transaction.replace(R.id.planttest_start_fragment, plantTest2);
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
         plantTest1_an3.setOnClickListener(new View.OnClickListener() {
@@ -81,7 +81,7 @@ public class PlantTest1 extends Fragment {
                 plantTest2.setArguments(bundle);
 
                 transaction.replace(R.id.planttest_start_fragment, plantTest2);
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
         return plantTest1;

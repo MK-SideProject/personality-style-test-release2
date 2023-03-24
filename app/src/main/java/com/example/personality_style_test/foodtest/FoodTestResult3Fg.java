@@ -1,5 +1,7 @@
 package com.example.personality_style_test.foodtest;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.personality_style_test.HumorActivity;
 import com.example.personality_style_test.R;
 
 /**
@@ -39,6 +42,26 @@ public class FoodTestResult3Fg extends Fragment {
         View foodTestResult3Fg = inflater.inflate(R.layout.fragment_food_test_result3_fg, container, false);
         Button foodTestRestart = (Button) foodTestResult3Fg.findViewById(R.id.foodtest_restart);
         Button foodTestList = (Button) foodTestResult3Fg.findViewById(R.id.foodtest_list);
+        Activity thisActivity = getActivity();
+
+        foodTestRestart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (thisActivity != null) {
+                    startActivity(new Intent(thisActivity, FoodTestActivity.class));
+                    thisActivity.finish();
+                }
+            }
+        });
+        foodTestList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (thisActivity != null) {
+                    startActivity(new Intent(thisActivity, HumorActivity.class));
+                    thisActivity.finish();
+                }
+            }
+        });
 
         return foodTestResult3Fg;
     }

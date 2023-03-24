@@ -57,8 +57,7 @@ public class FoodTest5 extends Fragment {
                     foodTest6.setArguments(bundleNext);
 
                     transaction.replace(R.id.foodtest_start_fragment, foodTest6);
-                    transaction.commit();
-                }
+                    transaction.addToBackStack(null).commit();                }
             });
 
             foodTest5_an2.setOnClickListener(new View.OnClickListener() {
@@ -68,8 +67,7 @@ public class FoodTest5 extends Fragment {
                     foodTest6.setArguments(bundleNext);
 
                     transaction.replace(R.id.foodtest_start_fragment, foodTest6);
-                    transaction.commit();
-                }
+                    transaction.addToBackStack(null).commit();                }
             });
         }
         return foodTest5;

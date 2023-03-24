@@ -68,7 +68,7 @@ public class PlantTest3 extends Fragment {
                 public void onClick(View view) {
                     plantTest4.setArguments(bundleNext);
                     transaction.replace(R.id.planttest_start_fragment, plantTest4);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -77,7 +77,7 @@ public class PlantTest3 extends Fragment {
                 public void onClick(View view) {
                     plantTest4.setArguments(bundleNext);
                     transaction.replace(R.id.planttest_start_fragment, plantTest4);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -86,7 +86,7 @@ public class PlantTest3 extends Fragment {
                 public void onClick(View view) {
                     plantTest4.setArguments(bundleNext);
                     transaction.replace(R.id.planttest_start_fragment, plantTest4);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
         }
