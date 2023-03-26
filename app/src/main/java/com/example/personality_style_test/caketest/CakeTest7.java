@@ -74,22 +74,23 @@ public class CakeTest7 extends Fragment {
                     if (cakeTestResult4 != null && cakeTestResult4.equals("result4")) {
                         //이동
                         transaction.replace(R.id.caketest_start_fragment, cakeTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (cakeTestResult1 != null && cakeTestResult1.equals("result1")) {
                         //이동
                         transaction.replace(R.id.caketest_start_fragment, cakeTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (cakeTestResult3 != null && cakeTestResult3.equals("result3")) {
                         //이동
                         transaction.replace(R.id.caketest_start_fragment, cakeTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
 
                     } else {
                         //이동
                         transaction.replace(R.id.caketest_start_fragment, cakeTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
 
 
@@ -103,22 +104,22 @@ public class CakeTest7 extends Fragment {
                     if (cakeTestResult4 != null && cakeTestResult4.equals("result4")) {
                         //이동
                         transaction.replace(R.id.caketest_start_fragment, cakeTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (cakeTestResult1 != null && cakeTestResult1.equals("result1")) {
                         //이동
                         transaction.replace(R.id.caketest_start_fragment, cakeTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (cakeTestResult3 != null && cakeTestResult3.equals("result3")) {
                         //이동
                         transaction.replace(R.id.caketest_start_fragment, cakeTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else {
                         //이동
                         transaction.replace(R.id.caketest_start_fragment, cakeTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
 
                 }

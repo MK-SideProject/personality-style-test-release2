@@ -101,69 +101,78 @@ public class Personality40 extends Fragment {
                     //1
                     if (e > i && n > s && f > t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEnfp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //2
                     else if (e > i && n > s && f > t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEnfj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //3
                     else if (e > i && n > s && f < t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEntp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //4
                     else if (e > i && n > s && f < t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEntj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //5
                     else if (e > i && n < s && f > t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEsfp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //6
                     else if (e > i && n < s && f > t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEsfj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //7
                     else if (e > i && n < s && f < t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEstp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }//8
                     else if (e > i && n < s && f < t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEstj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }//9
                     if (e < i && n > s && f > t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultInfp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n > s && f > t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultInfj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n > s && f < t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIntp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n > s && f < t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIntj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n < s && f > t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIsfp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n < s && f > t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIsfj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n < s && f < t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIstp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n < s && f < t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIstj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEnfp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
 
                     }
 
@@ -180,69 +189,78 @@ public class Personality40 extends Fragment {
                     //1
                     if (e > i && n > s && f > t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEnfp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //2
                     else if (e > i && n > s && f > t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEnfj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //3
                     else if (e > i && n > s && f < t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEntp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //4
                     else if (e > i && n > s && f < t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEntj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //5
                     else if (e > i && n < s && f > t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEsfp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //6
                     else if (e > i && n < s && f > t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEsfj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     //7
                     else if (e > i && n < s && f < t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEstp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }//8
                     else if (e > i && n < s && f < t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEstj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }//9
                     if (e < i && n > s && f > t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultInfp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n > s && f > t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultInfj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n > s && f < t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIntp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n > s && f < t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIntj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n < s && f > t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIsfp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n < s && f > t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIsfj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n < s && f < t && p > j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIstp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else if (e < i && n < s && f < t && p < j) {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultIstj);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else {
                         transaction.replace(R.id.personalitytest_start_fragment, personalityResultEnfp);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
 
                     }
 

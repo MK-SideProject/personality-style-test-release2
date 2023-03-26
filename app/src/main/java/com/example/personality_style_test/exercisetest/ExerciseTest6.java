@@ -89,27 +89,28 @@ public class ExerciseTest6 extends Fragment {
                     if (exerciseTestResult1 != null && exerciseTestResult1.equals("result1")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if ((exerciseTestResult4 != null && exerciseTestResult4.equals("result4")) && (diet != null && diet.equals("diet"))) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (exerciseTestResult2 != null && exerciseTestResult2.equals("result2")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (exerciseTestResult3 != null && exerciseTestResult3.equals("result3")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult5Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     }
 
 
@@ -126,27 +127,27 @@ public class ExerciseTest6 extends Fragment {
                     if (exerciseTestResult1 != null && exerciseTestResult1.equals("result1")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if ((exerciseTestResult4 != null && exerciseTestResult4.equals("result4")) && (diet != null && diet.equals("diet"))) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (exerciseTestResult2 != null && exerciseTestResult2.equals("result2")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (exerciseTestResult3 != null && exerciseTestResult3.equals("result3")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult5Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
 
 
@@ -164,27 +165,27 @@ public class ExerciseTest6 extends Fragment {
                     if (exerciseTestResult1 != null && exerciseTestResult1.equals("result1")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if ((exerciseTestResult4 != null && exerciseTestResult4.equals("result4")) && (diet != null && diet.equals("diet"))) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (exerciseTestResult2 != null && exerciseTestResult2.equals("result2")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (exerciseTestResult3 != null && exerciseTestResult3.equals("result3")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult5Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
 
                 }
@@ -198,27 +199,27 @@ public class ExerciseTest6 extends Fragment {
                     if (exerciseTestResult1 != null && exerciseTestResult1.equals("result1")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if ((exerciseTestResult4 != null && exerciseTestResult4.equals("result4")) && (diet != null && diet.equals("diet"))) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (exerciseTestResult2 != null && exerciseTestResult2.equals("result2")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (exerciseTestResult3 != null && exerciseTestResult3.equals("result3")) {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else {
                         //이동
                         transaction.replace(R.id.exercisetest_start_fragment, exerciseTestResult5Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
 
                 }

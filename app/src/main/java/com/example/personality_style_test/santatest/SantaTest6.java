@@ -80,18 +80,20 @@ public class SantaTest6 extends Fragment {
 
                     if (santaTestResult4 != null && santaTestResult4.equals("result4")) {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (santaTestResult2 != null && santaTestResult2.equals("result2")) {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (santaTestResult1 != null && santaTestResult1.equals("result1")) {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     } else {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
+
                     }
                 }
             });
@@ -103,18 +105,18 @@ public class SantaTest6 extends Fragment {
 
                     if (santaTestResult4 != null && santaTestResult4.equals("result4")) {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (santaTestResult2 != null && santaTestResult2.equals("result2")) {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (santaTestResult1 != null && santaTestResult1.equals("result1")) {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     } else {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                 }
             });
@@ -126,18 +128,18 @@ public class SantaTest6 extends Fragment {
 
                     if (santaTestResult4 != null && santaTestResult4.equals("result4")) {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (santaTestResult2 != null && santaTestResult2.equals("result2")) {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
 
                     } else if (santaTestResult1 != null && santaTestResult1.equals("result1")) {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     } else {
                         transaction.replace(R.id.santatest_start_fragment, santaTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                 }
             });
@@ -162,7 +164,7 @@ public class SantaTest6 extends Fragment {
                 public void onClick(View view) {
 
                     transaction.replace(R.id.santatest_start_fragment, santaTestResult3Fg);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
 
                 }
             });
@@ -172,7 +174,7 @@ public class SantaTest6 extends Fragment {
                 public void onClick(View view) {
 
                     transaction.replace(R.id.santatest_start_fragment, santaTestResult3Fg);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
 
                 }
             });
@@ -182,7 +184,7 @@ public class SantaTest6 extends Fragment {
                 public void onClick(View view) {
 
                     transaction.replace(R.id.santatest_start_fragment, santaTestResult3Fg);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
 
                 }
             });
