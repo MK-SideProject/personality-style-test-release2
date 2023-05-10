@@ -41,13 +41,13 @@ public class ExerciseTest1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View ExerciseTest1 = inflater.inflate(R.layout.fragment_exercise_test1, container, false);
+        View exerciseTest1 = inflater.inflate(R.layout.fragment_exercise_test1, container, false);
 
-        Button exerciseTest_1_an1 = (Button) ExerciseTest1.findViewById(R.id.exercisetest_1_an1);
-        Button exerciseTest_1_an2 = (Button) ExerciseTest1.findViewById(R.id.exercisetest_1_an2);
-        Button exerciseTest_1_an3 = (Button) ExerciseTest1.findViewById(R.id.exercisetest_1_an3);
+        Button exerciseTest_1_an1 = (Button) exerciseTest1.findViewById(R.id.exercisetest_1_an1);
+        Button exerciseTest_1_an2 = (Button) exerciseTest1.findViewById(R.id.exercisetest_1_an2);
+        Button exerciseTest_1_an3 = (Button) exerciseTest1.findViewById(R.id.exercisetest_1_an3);
 
-        ExerciseTest2 ExerciseTest2 = new ExerciseTest2();
+        ExerciseTest2 exerciseTest2 = new ExerciseTest2();
 
         //프래그먼트 이동 선언
         FragmentManager mnger = getActivity().getSupportFragmentManager();
@@ -59,9 +59,9 @@ public class ExerciseTest1 extends Fragment {
             public void onClick(View view) {
 
                 //이동
-                transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest2);
+                transaction.replace(R.id.exercisetest_start_fragment, exerciseTest2);
 
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 
@@ -70,9 +70,9 @@ public class ExerciseTest1 extends Fragment {
             public void onClick(View view) {
 
                 //이동
-                transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest2);
+                transaction.replace(R.id.exercisetest_start_fragment, exerciseTest2);
 
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 
@@ -81,12 +81,12 @@ public class ExerciseTest1 extends Fragment {
             public void onClick(View view) {
 
                 //이동
-                transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest2);
+                transaction.replace(R.id.exercisetest_start_fragment, exerciseTest2);
 
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
 
-        return ExerciseTest1;
+        return exerciseTest1;
     }
 }

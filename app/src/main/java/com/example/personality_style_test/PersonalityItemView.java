@@ -23,8 +23,6 @@ public class PersonalityItemView extends LinearLayout {
 
     }
     private void init(Context context){
-        //만들어놓은 xml파일을 객체화해와서 붙이는 역할을 하면 되겠죠
-        //서비스에서 제공하는 LAYOUT_INFLATER_SERVICE를 활용합니다.
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         //객체화하기위해서 인플레이션 서비스를 활용함
         inflater.inflate(R.layout.personality_item,this,true);

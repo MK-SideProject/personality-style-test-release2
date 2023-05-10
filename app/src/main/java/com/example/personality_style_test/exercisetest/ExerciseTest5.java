@@ -45,10 +45,10 @@ public class ExerciseTest5 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View ExerciseTest5 = inflater.inflate(R.layout.fragment_exercise_test5, container, false);
+        View exerciseTest5 = inflater.inflate(R.layout.fragment_exercise_test5, container, false);
 
-        Button exerciseTest_5_an1 = (Button) ExerciseTest5.findViewById(R.id.exercisetest_5_an1);
-        Button exerciseTest_5_an2 = (Button) ExerciseTest5.findViewById(R.id.exercisetest_5_an2);
+        Button exerciseTest_5_an1 = (Button) exerciseTest5.findViewById(R.id.exercisetest_5_an1);
+        Button exerciseTest_5_an2 = (Button) exerciseTest5.findViewById(R.id.exercisetest_5_an2);
 
         //전달한 번들 메소드 받기
         Bundle bundle = getArguments();
@@ -65,7 +65,7 @@ public class ExerciseTest5 extends Fragment {
 
 
             //데이터 전달 및 프래그먼트 변경
-            ExerciseTest6 ExerciseTest6 = new ExerciseTest6();
+            ExerciseTest6 exerciseTest6 = new ExerciseTest6();
             //전달할 번들 생성
             Bundle bundleNext = new Bundle();
 
@@ -86,12 +86,12 @@ public class ExerciseTest5 extends Fragment {
                     bundleNext.putString("exerciseTestResult5",exerciseTestResult5);
                     bundleNext.putString("diet",diet);
                     //다음 프래그먼트로 값 이동
-                    ExerciseTest6.setArguments(bundleNext);
+                    exerciseTest6.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest6);
+                    transaction.replace(R.id.exercisetest_start_fragment, exerciseTest6);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -111,16 +111,16 @@ public class ExerciseTest5 extends Fragment {
                     bundleNext.putString("exerciseTestResult5",exerciseTestResult5);
                     bundleNext.putString("diet",diet);
                     //다음 프래그먼트로 값 이동
-                    ExerciseTest6.setArguments(bundleNext);
+                    exerciseTest6.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.exercisetest_start_fragment, ExerciseTest6);
+                    transaction.replace(R.id.exercisetest_start_fragment, exerciseTest6);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
         }
 
-        return ExerciseTest5;
+        return exerciseTest5;
     }
 }
