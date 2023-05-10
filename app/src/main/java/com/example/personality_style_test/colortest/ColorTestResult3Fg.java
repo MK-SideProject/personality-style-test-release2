@@ -1,5 +1,7 @@
 package com.example.personality_style_test.colortest;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.personality_style_test.PersonalityActivity;
 import com.example.personality_style_test.R;
 
 /**
@@ -41,7 +44,26 @@ public class ColorTestResult3Fg extends Fragment {
 
         Button colorTestRestart = (Button) colorTestResult3Fg.findViewById(R.id.colortest_restart);
         Button colorTestList = (Button) colorTestResult3Fg.findViewById(R.id.colortest_list);
+        Activity thisActivity = getActivity();
 
+        colorTestList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (thisActivity != null) {
+                    startActivity(new Intent(thisActivity, PersonalityActivity.class));
+                    thisActivity.finish();
+                }
+            }
+        });
+        colorTestRestart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(thisActivity != null) {
+                    startActivity(new Intent(thisActivity, ColorTestActivity.class));
+                    thisActivity.finish();
+                }
+            }
+        });
         return colorTestResult3Fg;
     }
 }

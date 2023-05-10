@@ -63,11 +63,6 @@ public class ColorTest6 extends Fragment {
             colorTestResult4 = bundle.getString("colorTestResult4");
             colorTestResult5 = bundle.getString("colorTestResult5");
 
-//            //데이터 전달 및 프래그먼트 변경
-//            ColorTest_6 colorTest6 = new ColorTest_6();
-//            //전달할 번들 생성
-//            Bundle bundleNext = new Bundle();
-
             //프래그먼트 이동 선언
             FragmentManager mnger = getActivity().getSupportFragmentManager();
             FragmentTransaction transaction = mnger.beginTransaction();
@@ -87,27 +82,27 @@ public class ColorTest6 extends Fragment {
                     if(colorTestResult4 != null && colorTestResult4.equals("result4") ){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult5!= null && colorTestResult5.equals("result5")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult5Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult2!= null && colorTestResult2.equals("result2")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult1!= null && colorTestResult1.equals("result1")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else{
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                 }
             });
@@ -120,27 +115,27 @@ public class ColorTest6 extends Fragment {
                     if(colorTestResult4!= null && colorTestResult4.equals("result4") ){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult5!= null && colorTestResult5.equals("result5")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult5Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult2!= null && colorTestResult2.equals("result2")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult1!= null && colorTestResult1.equals("result1")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else{
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                 }
             });
@@ -152,27 +147,27 @@ public class ColorTest6 extends Fragment {
                     if(colorTestResult4!= null && colorTestResult4.equals("result4") ){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult5!= null && colorTestResult5.equals("result5")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult5Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult2!= null && colorTestResult2.equals("result2")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult1!= null && colorTestResult1.equals("result1")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else{
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                 }
             });
@@ -185,27 +180,27 @@ public class ColorTest6 extends Fragment {
                     if(colorTestResult4!= null && colorTestResult4.equals("result4") ){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult4Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult5!= null && colorTestResult5.equals("result5")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult5Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult2!= null && colorTestResult2.equals("result2")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult2Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else if(colorTestResult1!= null && colorTestResult1.equals("result1")){
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult1Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                     else{
                         //이동
                         transaction.replace(R.id.colortest_start_fragment, colorTestResult3Fg);
-                        transaction.commit();
+                        transaction.addToBackStack(null).commit();
                     }
                 }
             });

@@ -56,7 +56,7 @@ public class ColorTest2 extends Fragment {
         Bundle bundle = getArguments();
 
         //값이 있다면
-        if(bundle != null){
+        if (bundle != null) {
             colorTestResult1 = bundle.getString("colorTestResult1");
             colorTestResult2 = bundle.getString("colorTestResult2");
             colorTestResult3 = bundle.getString("colorTestResult3");
@@ -72,23 +72,23 @@ public class ColorTest2 extends Fragment {
             FragmentManager mnger = getActivity().getSupportFragmentManager();
             FragmentTransaction transaction = mnger.beginTransaction();
 
+            //번틀 값 설정
+            bundleNext.putString("colorTestResult1", colorTestResult1);
+            bundleNext.putString("colorTestResult2", colorTestResult2);
+            bundleNext.putString("colorTestResult3", colorTestResult3);
+            bundleNext.putString("colorTestResult4", colorTestResult4);
             //버튼 1번 클릭
             colorTest2_an1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    bundleNext.putString("colorTestResult5", colorTestResult5);
 
-                    //번틀 값 설정
-                    bundleNext.putString("colorTestResult1",colorTestResult1);
-                    bundleNext.putString("colorTestResult2",colorTestResult2);
-                    bundleNext.putString("colorTestResult3",colorTestResult3);
-                    bundleNext.putString("colorTestResult4",colorTestResult4);
-                    bundleNext.putString("colorTestResult5",colorTestResult5);
                     //다음 프래그먼트로 값 이동
                     colorTest3.setArguments(bundleNext);
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest3);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -96,19 +96,13 @@ public class ColorTest2 extends Fragment {
             colorTest2_an2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    bundleNext.putString("colorTestResult5", colorTestResult5);
                     //번틀 값 설정
-                    bundleNext.putString("colorTestResult1",colorTestResult1);
-                    bundleNext.putString("colorTestResult2",colorTestResult2);
-                    bundleNext.putString("colorTestResult3",colorTestResult3);
-                    bundleNext.putString("colorTestResult4",colorTestResult4);
-                    bundleNext.putString("colorTestResult5",colorTestResult5);
                     colorTest3.setArguments(bundleNext);
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest3);
-
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -116,19 +110,13 @@ public class ColorTest2 extends Fragment {
             colorTest2_an3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    bundleNext.putString("colorTestResult5", colorTestResult5);
                     //번틀 값 설정
-                    bundleNext.putString("colorTestResult1",colorTestResult1);
-                    bundleNext.putString("colorTestResult2",colorTestResult2);
-                    bundleNext.putString("colorTestResult3",colorTestResult3);
-                    bundleNext.putString("colorTestResult4",colorTestResult4);
-                    bundleNext.putString("colorTestResult5",colorTestResult5);
                     colorTest3.setArguments(bundleNext);
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest3);
-
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -138,17 +126,12 @@ public class ColorTest2 extends Fragment {
                     colorTestResult5 = "result5";
 
                     //번틀 값 설정
-                    bundleNext.putString("colorTestResult1",colorTestResult1);
-                    bundleNext.putString("colorTestResult2",colorTestResult2);
-                    bundleNext.putString("colorTestResult3",colorTestResult3);
-                    bundleNext.putString("colorTestResult4",colorTestResult4);
-                    bundleNext.putString("colorTestResult5",colorTestResult5);
+                    bundleNext.putString("colorTestResult5", colorTestResult5);
                     colorTest3.setArguments(bundleNext);
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest3);
-
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
         }
