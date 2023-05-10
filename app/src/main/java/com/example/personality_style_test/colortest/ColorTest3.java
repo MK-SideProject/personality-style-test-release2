@@ -76,20 +76,20 @@ public class ColorTest3 extends Fragment {
             colorTest3_an1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    colorTestResult3 = "result3";
-
                     //번틀 값 설정
                     bundleNext.putString("colorTestResult1", colorTestResult1);
                     bundleNext.putString("colorTestResult2", colorTestResult2);
                     bundleNext.putString("colorTestResult3", colorTestResult3);
                     bundleNext.putString("colorTestResult4", colorTestResult4);
                     bundleNext.putString("colorTestResult5", colorTestResult5);
+                    colorTestResult3 = "result3";
+
                     //다음 프래그먼트로 값 이동
                     colorTest4.setArguments(bundleNext);
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest4);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -108,8 +108,7 @@ public class ColorTest3 extends Fragment {
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest4);
-
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -128,8 +127,7 @@ public class ColorTest3 extends Fragment {
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest4);
-
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -148,8 +146,7 @@ public class ColorTest3 extends Fragment {
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest4);
-
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
         }

@@ -470,13 +470,13 @@
             android:name=".bankingtest.bankingtest_1_Activity"
             android:exported="true" />
         <activity
-            android:name=".triptest.triptestActivity"
+            android:name=".triptest.TripTestActivity"
             android:exported="true" />
         <activity
             android:name=".santatest.santatestActivity"
             android:exported="true" />
         <activity
-            android:name=".planttest.planttestActivity"
+            android:name=".planttest.PlantTestActivity"
             android:exported="true" />
         <activity
             android:name=".exercisetest.exercisetestActivity"
@@ -491,7 +491,7 @@
             android:name=".bankingtest.BankingTestActivity"
             android:exported="true" />
         <activity
-            android:name=".foodtest.foodtestActivity"
+            android:name=".foodtest.FoodTestActivity"
             android:exported="true" />
         <activity
             android:name=".coupleActivity"

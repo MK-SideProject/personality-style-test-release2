@@ -88,7 +88,7 @@ public class ColorTest4 extends Fragment {
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest5);
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -107,8 +107,7 @@ public class ColorTest4 extends Fragment {
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest5);
-
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -128,8 +127,8 @@ public class ColorTest4 extends Fragment {
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest5);
+                    transaction.addToBackStack(null).commit();
 
-                    transaction.commit();
                 }
             });
 
@@ -147,8 +146,7 @@ public class ColorTest4 extends Fragment {
 
                     //이동
                     transaction.replace(R.id.colortest_start_fragment, colorTest5);
-
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
         }
