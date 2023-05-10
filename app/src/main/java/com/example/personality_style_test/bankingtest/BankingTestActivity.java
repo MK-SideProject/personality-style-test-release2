@@ -23,14 +23,13 @@ public class BankingTestActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
                 // 화면 전환 프래그먼트 선언 및 초기 화면 설정
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
 
-                BankingTest1 BankingTest1 = new BankingTest1();
+                BankingTest1 bankingTest1 = new BankingTest1();
 
-                transaction.replace(R.id.bankingtest_start_fragment, BankingTest1).commit();
+                transaction.replace(R.id.bankingtest_start_fragment, bankingTest1).commit();
             }
         });
 

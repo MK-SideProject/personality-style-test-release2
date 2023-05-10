@@ -22,7 +22,7 @@ public class BankingTest3 extends Fragment {
     private String bankingTestResult3;
 
     public BankingTest3() {
-        // Required empty public constructor
+
     }
 
     public static BankingTest3 newInstance() {
@@ -43,11 +43,11 @@ public class BankingTest3 extends Fragment {
                              Bundle savedInstanceState) {
 
         //뷰 선언
-        View BankingTest3 = inflater.inflate(R.layout.fragment_banking_test_3, container, false);
+        View bankingTest3 = inflater.inflate(R.layout.fragment_banking_test_3, container, false);
 
-        Button bankingTest3_an1 = (Button) BankingTest3.findViewById(R.id.bankingtest_3_an1);
-        Button bankingTest3_an2 = (Button) BankingTest3.findViewById(R.id.bankingtest_3_an2);
-        Button bankingTest3_an3 = (Button) BankingTest3.findViewById(R.id.bankingtest_3_an3);
+        Button bankingTest3_an1 = (Button) bankingTest3.findViewById(R.id.bankingtest_3_an1);
+        Button bankingTest3_an2 = (Button) bankingTest3.findViewById(R.id.bankingtest_3_an2);
+        Button bankingTest3_an3 = (Button) bankingTest3.findViewById(R.id.bankingtest_3_an3);
 
         //전달한 번들 메소드 받기
         Bundle bundle = getArguments();
@@ -60,7 +60,7 @@ public class BankingTest3 extends Fragment {
 
 
             //데이터 전달 및 프래그먼트 변경
-            BankingTest4 bankingTest_4 = new BankingTest4();
+            BankingTest4 bankingTest4 = new BankingTest4();
             //전달할 번들 생성
             Bundle bundleNext = new Bundle();
 
@@ -77,12 +77,12 @@ public class BankingTest3 extends Fragment {
                     bundleNext.putString("bankingTestResult2",bankingTestResult2);
                     bundleNext.putString("bankingTestResult3",bankingTestResult3);
                     //다음 프래그먼트로 값 이동
-                    bankingTest_4.setArguments(bundleNext);
+                    bankingTest4.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.bankingtest_start_fragment, bankingTest_4);
+                    transaction.replace(R.id.bankingtest_start_fragment, bankingTest4);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -95,12 +95,12 @@ public class BankingTest3 extends Fragment {
                     bundleNext.putString("bankingTestResult2",bankingTestResult2);
                     bundleNext.putString("bankingTestResult3",bankingTestResult3);
                     //다음 프래그먼트로 값 이동
-                    bankingTest_4.setArguments(bundleNext);
+                    bankingTest4.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.bankingtest_start_fragment, bankingTest_4);
+                    transaction.replace(R.id.bankingtest_start_fragment, bankingTest4);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
 
@@ -115,15 +115,15 @@ public class BankingTest3 extends Fragment {
                     bundleNext.putString("bankingTestResult2",bankingTestResult2);
                     bundleNext.putString("bankingTestResult3",bankingTestResult3);
                     //다음 프래그먼트로 값 이동
-                    bankingTest_4.setArguments(bundleNext);
+                    bankingTest4.setArguments(bundleNext);
 
                     //이동
-                    transaction.replace(R.id.bankingtest_start_fragment, bankingTest_4);
+                    transaction.replace(R.id.bankingtest_start_fragment, bankingTest4);
 
-                    transaction.commit();
+                    transaction.addToBackStack(null).commit();
                 }
             });
         }
-        return BankingTest3;
+        return bankingTest3;
     }
 }

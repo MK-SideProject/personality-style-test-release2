@@ -1,6 +1,7 @@
 package com.example.personality_style_test;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 
 import com.example.personality_style_test.caketest.CakeTestActivity;
@@ -19,6 +21,7 @@ import com.example.personality_style_test.santatest.santatestActivity;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class HumorActivity extends AppCompatActivity {
 
@@ -100,5 +103,6 @@ public class HumorActivity extends AppCompatActivity {
             return humorItemView;
         }
     }
+
 
 }
