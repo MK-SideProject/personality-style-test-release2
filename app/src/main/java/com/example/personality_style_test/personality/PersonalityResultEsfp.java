@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.personality_style_test.MainActivity;
 import com.example.personality_style_test.R;
@@ -45,6 +46,7 @@ public class PersonalityResultEsfp extends Fragment {
 
         Button personalityTestRestart = (Button) personalityResultEsfp.findViewById(R.id.personalitytest_restart);
         Button personalityTestList = (Button) personalityResultEsfp.findViewById(R.id.personalitytest_list);
+        ImageButton personalityTestShare = (ImageButton) personalityResultEsfp.findViewById(R.id.share_button);
 
         //현재 액티비를 가져온다
         Activity thisActivity = getActivity();
@@ -72,6 +74,20 @@ public class PersonalityResultEsfp extends Fragment {
                     //지금껀 종료
                     thisActivity.finish();
                 }
+            }
+        });
+
+        personalityTestShare.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+                //결과 내용 + 어플링크
+                sharingIntent.putExtra(Intent.EXTRA_TEXT, "MBTI 테스트 결과 - 당신은 ESFP \n" + "https://play.google.com/store/apps/details?id=com.mk.personality_style_test&hl=ko");
+                startActivity(Intent.createChooser(sharingIntent, "결과를 공유할 앱을 선택해주세요"));
+
+
             }
         });
 
