@@ -53,7 +53,7 @@ public class ColorTestResult1Fg extends Fragment {
             @Override
             public void onClick(View v) {
                 if (thisActivity != null) {
-                    startActivity(new Intent(thisActivity, PersonalityActivity.class));
+//                    startActivity(new Intent(thisActivity, PersonalityActivity.class));
                     thisActivity.finish();
                 }
             }
@@ -72,7 +72,7 @@ public class ColorTestResult1Fg extends Fragment {
             public void onClick(View v) {
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                sharingIntent.putExtra(Intent.EXTRA_TEXT, "컬러테스트 결과 - 당신의 색은 클래식 블루!");
+                sharingIntent.putExtra(Intent.EXTRA_TEXT, "컬러테스트 결과 - 당신의 색은 클래식 블루! \n" + "https://play.google.com/store/apps/details?id=com.mk.personality_style_test&hl=ko");
                 startActivity(Intent.createChooser(sharingIntent, "결과를 공유할 앱을 선택해 주세요."));
             }
         });

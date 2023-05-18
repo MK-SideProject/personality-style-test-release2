@@ -54,7 +54,7 @@ public class ColorTestResult4Fg extends Fragment {
             @Override
             public void onClick(View v) {
                 if (thisActivity != null) {
-                    startActivity(new Intent(thisActivity, PersonalityActivity.class));
+//                    startActivity(new Intent(thisActivity, PersonalityActivity.class));
                     thisActivity.finish();
                 }
             }

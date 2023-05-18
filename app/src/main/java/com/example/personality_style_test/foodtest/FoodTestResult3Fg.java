@@ -60,7 +60,7 @@ public class FoodTestResult3Fg extends Fragment {
             @Override
             public void onClick(View v) {
                 if (thisActivity != null) {
-                    startActivity(new Intent(thisActivity, HumorActivity.class));
+//                    startActivity(new Intent(thisActivity, HumorActivity.class));
                     thisActivity.finish();
                 }
             }
