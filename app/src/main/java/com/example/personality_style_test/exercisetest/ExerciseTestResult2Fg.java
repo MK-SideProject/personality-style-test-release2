@@ -69,7 +69,7 @@ public class ExerciseTestResult2Fg extends Fragment {
                 //현재 액티비를 가져온다
                 if (thisActivity != null) {
                     //현재 액티비티가 null이 아니라면 목록을 불러온 후
-                    startActivity(new Intent(thisActivity,  PersonalityActivity.class));
+                    //startActivity(new Intent(thisActivity,  PersonalityActivity.class));
                     //지금껀 종료
                     thisActivity.finish();
                 }
