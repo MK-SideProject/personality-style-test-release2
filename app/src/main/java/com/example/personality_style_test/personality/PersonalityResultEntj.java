@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.personality_style_test.MainActivity;
 import com.example.personality_style_test.R;
@@ -44,6 +45,7 @@ public class PersonalityResultEntj extends Fragment {
 
         Button personalityTestRestart = (Button) personalityResultEntj.findViewById(R.id.personalitytest_restart);
         Button personalityTestList = (Button) personalityResultEntj.findViewById(R.id.personalitytest_list);
+        ImageButton personalityTestShare = (ImageButton) personalityResultEntj.findViewById(R.id.share_button);
 
         //현재 액티비를 가져온다
         Activity thisActivity = getActivity();
@@ -67,13 +69,26 @@ public class PersonalityResultEntj extends Fragment {
                 //현재 액티비를 가져온다
                 if (thisActivity != null) {
                     //현재 액티비티가 null이 아니라면 목록을 불러온 후
-                    startActivity(new Intent(thisActivity,  MainActivity.class));
+                    //startActivity(new Intent(thisActivity,  MainActivity.class));
                     //지금껀 종료
                     thisActivity.finish();
                 }
             }
         });
 
+        personalityTestShare.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+                //결과 내용 + 어플링크
+                sharingIntent.putExtra(Intent.EXTRA_TEXT, "MBTI 테스트 결과 - 당신은 ENTJ \n" + "https://play.google.com/store/apps/details?id=com.mk.personality_style_test&hl=ko");
+                startActivity(Intent.createChooser(sharingIntent, "결과를 공유할 앱을 선택해주세요"));
+
+
+            }
+        });
         return personalityResultEntj;
     }
 }
