@@ -4,14 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.bankingtest.bankingtest_1_Activity;
-import com.example.personality_style_test.caketest.CakeTest1;
 
 public class exercisetestActivity extends AppCompatActivity {
 

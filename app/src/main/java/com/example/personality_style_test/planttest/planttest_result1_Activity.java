@@ -13,8 +13,6 @@ import android.widget.Button;
 
 import com.example.personality_style_test.MainActivity;
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.santatest.santatest_1_Activity;
-import com.example.personality_style_test.santatest.santatest_result1_Activity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;

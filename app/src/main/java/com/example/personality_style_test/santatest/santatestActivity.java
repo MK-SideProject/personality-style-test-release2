@@ -1,22 +1,14 @@
 package com.example.personality_style_test.santatest;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.bankingtest.bankingtest_1_Activity;
-import com.example.personality_style_test.colortest.ColorTest1;
-import com.example.personality_style_test.onBackPressedListener;
-
-import java.util.List;
 
 public class santatestActivity extends AppCompatActivity {
 
