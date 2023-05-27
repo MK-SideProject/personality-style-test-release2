@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.personality_style_test.PersonalityActivity;
 import com.example.personality_style_test.R;
@@ -45,13 +46,15 @@ public class ColorTestResult4Fg extends Fragment {
 
         Button colorTestRestart = (Button) colorTestResult4Fg.findViewById(R.id.colortest_restart);
         Button colorTestList = (Button) colorTestResult4Fg.findViewById(R.id.colortest_list);
+        ImageButton colorTestShare = (ImageButton) colorTestResult4Fg.findViewById(R.id.share_button);
+
         Activity thisActivity = getActivity();
 
         colorTestList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (thisActivity != null) {
-                    startActivity(new Intent(thisActivity, PersonalityActivity.class));
+//                    startActivity(new Intent(thisActivity, PersonalityActivity.class));
                     thisActivity.finish();
                 }
             }
@@ -65,6 +68,16 @@ public class ColorTestResult4Fg extends Fragment {
                 }
             }
         });
+        colorTestShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+                sharingIntent.putExtra(Intent.EXTRA_TEXT, "컬러테스트 결과 - 당신의 색은 울트라 바이올렛! \n" + "https://play.google.com/store/apps/details?id=com.mk.personality_style_test&hl=ko");
+                startActivity(Intent.createChooser(sharingIntent, "결과를 공유할 앱을 선택해 주세요."));
+            }
+        });
+
         return colorTestResult4Fg;
     }
 }

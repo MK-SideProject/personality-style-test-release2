@@ -10,16 +10,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.personality_style_test.HumorActivity;
+import com.example.personality_style_test.PersonalityActivity;
 import com.example.personality_style_test.R;
 import com.example.personality_style_test.foodtest.FoodTestActivity;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link PlantTestResult2Fg#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class PlantTestResult2Fg extends Fragment {
 
     public PlantTestResult2Fg() {
@@ -43,13 +40,15 @@ public class PlantTestResult2Fg extends Fragment {
 
         Button plantTestRestart = (Button) plantTestResult2Fg.findViewById(R.id.planttest_restart);
         Button plantTestList = (Button) plantTestResult2Fg.findViewById(R.id.planttest_list);
+        ImageButton plantTestShare = (ImageButton) plantTestResult2Fg.findViewById(R.id.share_button);
+
         Activity thisActivity = getActivity();
 
         plantTestRestart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (thisActivity != null) {
-                    startActivity(new Intent(thisActivity, FoodTestActivity.class));
+                    startActivity(new Intent(thisActivity, PlantTestActivity.class));
                     thisActivity.finish();
                 }
             }
@@ -58,9 +57,18 @@ public class PlantTestResult2Fg extends Fragment {
             @Override
             public void onClick(View v) {
                 if (thisActivity != null) {
-                    startActivity(new Intent(thisActivity, HumorActivity.class));
+//                    startActivity(new Intent(thisActivity, PersonalityActivity.class));
                     thisActivity.finish();
                 }
+            }
+        });
+        plantTestShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+                sharingIntent.putExtra(Intent.EXTRA_TEXT, "식물테스트 결과 - 강렬한 색을 선호하는 당신! \n" + "https://play.google.com/store/apps/details?id=com.mk.personality_style_test&hl=ko");
+                startActivity(Intent.createChooser(sharingIntent, "결과를 공유할 앱을 선택해 주세요."));
             }
         });
 

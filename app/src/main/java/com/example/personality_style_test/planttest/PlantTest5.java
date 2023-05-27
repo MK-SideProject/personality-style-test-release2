@@ -51,7 +51,7 @@ public class PlantTest5 extends Fragment {
         Bundle bundle = getArguments();
 
         //값이 있다면
-        if (bundle != null) {
+        if (bundle!=null) {
             plantTestResult1 = bundle.getString("plantTestResult1");
             plantTestResult2 = bundle.getString("plantTestResult2");
             plantTestResult3 = bundle.getString("plantTestResult3");
@@ -67,16 +67,16 @@ public class PlantTest5 extends Fragment {
             plantTest5_an1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (plantTestResult2 != null && plantTestResult2.equals("result2")) {
-                        transaction.replace(R.id.planttest_start_fragment, plantTestResult2Fg);
-                        transaction.commit();
-                    } else if (plantTestResult3.equals("result3")) {
-                        transaction.replace(R.id.planttest_start_fragment, plantTestResult3Fg);
-                        transaction.commit();
-                    } else {
-                        transaction.replace(R.id.planttest_start_fragment, plantTestResult1Fg);
-                        transaction.commit();
-                    }
+                        if (plantTestResult2 != null && plantTestResult2.equals("result2")) {
+                            transaction.replace(R.id.planttest_start_fragment, plantTestResult2Fg);
+                            transaction.commit();
+                        } else if (plantTestResult3!=null && plantTestResult3.equals("result3")) {
+                            transaction.replace(R.id.planttest_start_fragment, plantTestResult3Fg);
+                            transaction.commit();
+                        } else {
+                            transaction.replace(R.id.planttest_start_fragment, plantTestResult1Fg);
+                            transaction.commit();
+                        }
                 }
             });
 
@@ -85,16 +85,8 @@ public class PlantTest5 extends Fragment {
                 public void onClick(View view) {
                     plantTestResult2 = "result2";
 
-                    if (plantTestResult2 != null && plantTestResult2.equals("result2")) {
-                        transaction.replace(R.id.planttest_start_fragment, plantTestResult2Fg);
-                        transaction.commit();
-                    } else if (plantTestResult3 != null && plantTestResult3.equals("result3")) {
-                        transaction.replace(R.id.planttest_start_fragment, plantTestResult3Fg);
-                        transaction.commit();
-                    } else {
-                        transaction.replace(R.id.planttest_start_fragment, plantTestResult1Fg);
-                        transaction.commit();
-                    }
+                    transaction.replace(R.id.planttest_start_fragment, plantTestResult2Fg);
+                    transaction.commit();
                 }
             });
 
@@ -113,6 +105,19 @@ public class PlantTest5 extends Fragment {
                     }
                 }
             });
+        }
+        else {
+//            plantTestResult1 = bundle.getString("plantTestResult1");
+//            plantTestResult2 = bundle.getString("plantTestResult2");
+//            plantTestResult3 = bundle.getString("plantTestResult3");
+
+            FragmentManager mnger = getActivity().getSupportFragmentManager();
+            FragmentTransaction transaction = mnger.beginTransaction();
+
+            PlantTestResult1Fg plantTestResult1Fg = new PlantTestResult1Fg();
+
+            transaction.replace(R.id.planttest_start_fragment, plantTestResult1Fg);
+            transaction.commit();
         }
         return plantTest5;
     }
