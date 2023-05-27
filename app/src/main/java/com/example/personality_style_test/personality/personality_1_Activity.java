@@ -1,14 +1,13 @@
 package com.example.personality_style_test.personality;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.foodtest.foodtest_2_Activity;
 
 public class personality_1_Activity extends AppCompatActivity {
 

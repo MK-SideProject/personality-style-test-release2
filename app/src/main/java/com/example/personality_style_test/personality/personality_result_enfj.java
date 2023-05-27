@@ -2,19 +2,17 @@ package com.example.personality_style_test.personality;
 
 import static android.content.ContentValues.TAG;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.personality_style_test.MainActivity;
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.planttest.planttest_1_Activity;
-import com.example.personality_style_test.planttest.planttest_result1_Activity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
