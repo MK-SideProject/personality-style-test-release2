@@ -1,4 +1,4 @@
-package com.example.personality_style_test.exercisetest;
+package com.example.personality_style_test.colortest;
 
 import static android.content.ContentValues.TAG;
 
@@ -13,8 +13,6 @@ import android.widget.Button;
 
 import com.example.personality_style_test.MainActivity;
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.colortest.colortest_1_Activity;
-import com.example.personality_style_test.colortest.colortest_result1_Activity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
@@ -23,14 +21,13 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
-public class exercisetest_result1_Activity extends AppCompatActivity {
+public class colortest_result5_Activity extends AppCompatActivity {
 
     private InterstitialAd mInterstitialAd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercisetest_result1);
-
+        setContentView(R.layout.activity_colortest_result5);
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {}
@@ -56,24 +53,25 @@ public class exercisetest_result1_Activity extends AppCompatActivity {
                         mInterstitialAd = null;
                     }
                 });
-        Button exercisetest_restart = (Button) findViewById(R.id.exercisetest_restart);
-        Button exercisetest_list = (Button) findViewById(R.id.exercisetest_list);
+
+        Button colortest_restart = (Button) findViewById(R.id.colortest_restart);
+        Button colortest_list = (Button) findViewById(R.id.colortest_list);
 
 
-        exercisetest_restart.setOnClickListener(new View.OnClickListener() {
+        colortest_restart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), exercisetest_1_Activity.class);
+                Intent intent = new Intent(getBaseContext(), colortest_1_Activity.class);
                 startActivity(intent);
             }
         });
-        exercisetest_list.setOnClickListener(new View.OnClickListener() {
+        colortest_list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), MainActivity.class);
                 startActivity(intent);
                 if (mInterstitialAd != null) {
-                    mInterstitialAd.show(exercisetest_result1_Activity.this);
+                    mInterstitialAd.show(colortest_result5_Activity.this);
                 } else {
                     Log.d("TAG", "The interstitial ad wasn't ready yet.");
                 }

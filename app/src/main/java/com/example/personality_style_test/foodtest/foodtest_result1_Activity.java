@@ -1,4 +1,4 @@
-package com.example.personality_style_test.exercisetest;
+package com.example.personality_style_test.foodtest;
 
 import static android.content.ContentValues.TAG;
 
@@ -13,8 +13,8 @@ import android.widget.Button;
 
 import com.example.personality_style_test.MainActivity;
 import com.example.personality_style_test.R;
-import com.example.personality_style_test.colortest.colortest_1_Activity;
-import com.example.personality_style_test.colortest.colortest_result1_Activity;
+import com.example.personality_style_test.exercisetest.exercisetest_1_Activity;
+import com.example.personality_style_test.exercisetest.exercisetest_result1_Activity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
@@ -23,13 +23,13 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
-public class exercisetest_result1_Activity extends AppCompatActivity {
+public class foodtest_result1_Activity extends AppCompatActivity {
 
     private InterstitialAd mInterstitialAd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercisetest_result1);
+        setContentView(R.layout.activity_foodtest_result1);
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -56,24 +56,24 @@ public class exercisetest_result1_Activity extends AppCompatActivity {
                         mInterstitialAd = null;
                     }
                 });
-        Button exercisetest_restart = (Button) findViewById(R.id.exercisetest_restart);
-        Button exercisetest_list = (Button) findViewById(R.id.exercisetest_list);
+        Button foodtest_restart = (Button) findViewById(R.id.foodtest_restart);
+        Button foodtest_list = (Button) findViewById(R.id.foodtest_list);
 
 
-        exercisetest_restart.setOnClickListener(new View.OnClickListener() {
+        foodtest_restart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), exercisetest_1_Activity.class);
+                Intent intent = new Intent(getBaseContext(), foodtest_1_Activity.class);
                 startActivity(intent);
             }
         });
-        exercisetest_list.setOnClickListener(new View.OnClickListener() {
+        foodtest_list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), MainActivity.class);
                 startActivity(intent);
                 if (mInterstitialAd != null) {
-                    mInterstitialAd.show(exercisetest_result1_Activity.this);
+                    mInterstitialAd.show(foodtest_result1_Activity.this);
                 } else {
                     Log.d("TAG", "The interstitial ad wasn't ready yet.");
                 }
