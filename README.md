@@ -7,6 +7,12 @@
 
 ***
 
+# 리팩토링2
+
+- kotlin + compose 리팩토링 구현 링크 : https://github.com/ksubin-dev/TypeTest-Kotlin
+
+***
+
 # 개요
 
 - 프로젝트 이름 : 유형테스트.zip
